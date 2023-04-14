@@ -2,19 +2,21 @@ package main.sourcecode;
 
 public class Main {
 
-    int mainA;
-    int mainB;
+    static String mainA = "7";
+    String mainB = "8";
+    static int mainC;
 
-    Main() {
-        super();
-        this.mainA = 3;
-        this. mainB = 5;
-    }
+//    Main() {
+//        super();
+//        this.mainA = 3;
+//        this. mainB = 5;
+//    }
 
     public static void main (String args[]) {
 
         int a = 3;
         int b = 5;
+        int ab;
         System.out.println(a+b);
         String c = "cat";
 
@@ -25,11 +27,13 @@ public class Main {
         Calculator calculator2 = new Calculator();
         calculator1.addUse(a, b);
 
-        showCatAge(cat1);
+        showMainA();
+
+        //System.out.println(ab);
+        System.out.println(Main.mainC);
     }
 
-    public static int showCatAge(Cat cat) {
-        return cat.getCurrentAge();
+    public static String showMainA() {
+        return Main.mainA;
     }
 }
-

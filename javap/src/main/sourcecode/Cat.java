@@ -19,6 +19,7 @@ public class Cat {
     }*/
 
     public int getCurrentAge() {
+        int a;
         return age;
     }
 
