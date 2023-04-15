@@ -1,0 +1,119 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/ThisTest.class
+  Last modified 2023. 4. 15.; size 508 bytes
+  SHA-256 checksum 4134bcd9dd16b5f2a40b42d9a089b439b3df9777b14dd8fdd85b2fd5120a6eac
+  Compiled from "ThisTest.java"
+public class main.sourcecode.ThisTest
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // main/sourcecode/ThisTest
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 4, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/ThisTest.i:I
+   #8 = Class              #10            // main/sourcecode/ThisTest
+   #9 = NameAndType        #11:#12        // i:I
+  #10 = Utf8               main/sourcecode/ThisTest
+  #11 = Utf8               i
+  #12 = Utf8               I
+  #13 = Methodref          #8.#14         // main/sourcecode/ThisTest.second:(I)V
+  #14 = NameAndType        #15:#16        // second:(I)V
+  #15 = Utf8               second
+  #16 = Utf8               (I)V
+  #17 = Methodref          #8.#3          // main/sourcecode/ThisTest."<init>":()V
+  #18 = Methodref          #8.#19         // main/sourcecode/ThisTest.first:()V
+  #19 = NameAndType        #20:#6         // first:()V
+  #20 = Utf8               first
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               main
+  #24 = Utf8               ([Ljava/lang/String;)V
+  #25 = Utf8               SourceFile
+  #26 = Utf8               ThisTest.java
+{
+  int i;
+    descriptor: I
+    flags: (0x0000)
+
+  public main.sourcecode.ThisTest();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_1
+         6: putfield      #7                  // Field i:I
+         9: return
+      LineNumberTable:
+        line 3: 0
+        line 5: 4
+
+  public void first();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=1
+         0: iconst_2
+         1: istore_1
+         2: iconst_3
+         3: istore_2
+         4: aload_0
+         5: iload_1
+         6: iload_2
+         7: iadd
+         8: putfield      #7                  // Field i:I
+        11: aload_0
+        12: iconst_4
+        13: invokevirtual #13                 // Method second:(I)V
+        16: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 2
+        line 10: 4
+        line 12: 11
+        line 13: 16
+
+  public void second(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=3, args_size=2
+         0: iconst_5
+         1: istore_2
+         2: aload_0
+         3: iload_1
+         4: iload_2
+         5: iadd
+         6: putfield      #7                  // Field i:I
+         9: return
+      LineNumberTable:
+        line 16: 0
+        line 17: 2
+        line 18: 9
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #8                  // class main/sourcecode/ThisTest
+         3: dup
+         4: invokespecial #17                 // Method "<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #18                 // Method first:()V
+        12: return
+      LineNumberTable:
+        line 21: 0
+        line 22: 8
+        line 23: 12
+}
+SourceFile: "ThisTest.java"
