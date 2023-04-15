@@ -2,7 +2,7 @@ Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/so
   Last modified 2023. 4. 15.; size 629 bytes
   SHA-256 checksum f73ccc1ff2d4c309d23069dbeabd4d9446aeba54e2587b2eb67a595041611594
   Compiled from "ThisConstructorTest.java"
-public class main.sourcecode.ThisConstructorTest
+public class main.sourcecode.thisandconstructor.ThisConstructorTest
   minor version: 0
   major version: 61
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
@@ -44,7 +44,7 @@ Constant pool:
   #32 = Utf8               SourceFile
   #33 = Utf8               ThisConstructorTest.java
 {
-  public main.sourcecode.ThisConstructorTest();
+  public main.sourcecode.thisandconstructor.ThisConstructorTest();
     descriptor: ()V
     flags: (0x0001) ACC_PUBLIC
     Code:
@@ -57,7 +57,7 @@ Constant pool:
         line 8: 0
         line 9: 6
 
-  public main.sourcecode.ThisConstructorTest(java.lang.String);
+  public main.sourcecode.thisandconstructor.ThisConstructorTest(java.lang.String);
     descriptor: (Ljava/lang/String;)V
     flags: (0x0001) ACC_PUBLIC
     Code:
@@ -71,7 +71,7 @@ Constant pool:
         line 12: 0
         line 13: 6
 
-  public main.sourcecode.ThisConstructorTest(java.lang.String, int);
+  public main.sourcecode.thisandconstructor.ThisConstructorTest(java.lang.String, int);
     descriptor: (Ljava/lang/String;I)V
     flags: (0x0001) ACC_PUBLIC
     Code:

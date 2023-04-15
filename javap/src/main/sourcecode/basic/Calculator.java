@@ -1,4 +1,4 @@
-package main.sourcecode;
+package main.sourcecode.basic;
 
 public class Calculator {
 

@@ -2,7 +2,7 @@ Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/so
   Last modified 2023. 4. 15.; size 508 bytes
   SHA-256 checksum 4134bcd9dd16b5f2a40b42d9a089b439b3df9777b14dd8fdd85b2fd5120a6eac
   Compiled from "ThisTest.java"
-public class main.sourcecode.ThisTest
+public class main.sourcecode.thisandconstructor.ThisTest
   minor version: 0
   major version: 61
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
@@ -41,7 +41,7 @@ Constant pool:
     descriptor: I
     flags: (0x0000)
 
-  public main.sourcecode.ThisTest();
+  public main.sourcecode.thisandconstructor.ThisTest();
     descriptor: ()V
     flags: (0x0001) ACC_PUBLIC
     Code:

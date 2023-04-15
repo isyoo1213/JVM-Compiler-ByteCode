@@ -1,4 +1,4 @@
-package main.sourcecode;
+package main.sourcecode.thisandconstructor;
 
 public class ThisConstructorTest {
     private String name;
