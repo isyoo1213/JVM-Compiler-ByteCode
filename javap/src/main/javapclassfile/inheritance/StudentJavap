@@ -1,0 +1,69 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/inheritance/Student.class
+  Last modified 2023. 4. 15.; size 441 bytes
+  SHA-256 checksum ffa76b042e93bedb4c2e8ff63f6500872c13d4834d943110ed9446a1fd0ce007
+  Compiled from "Student.java"
+public class main.sourcecode.inheritance.Student extends main.sourcecode.inheritance.Person
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // main/sourcecode/inheritance/Student
+  super_class: #2                         // main/sourcecode/inheritance/Person
+  interfaces: 0, fields: 1, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // main/sourcecode/inheritance/Person."<init>":()V
+   #2 = Class              #4             // main/sourcecode/inheritance/Person
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               main/sourcecode/inheritance/Person
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/inheritance/Student.major:Ljava/lang/String;
+   #8 = Class              #10            // main/sourcecode/inheritance/Student
+   #9 = NameAndType        #11:#12        // major:Ljava/lang/String;
+  #10 = Utf8               main/sourcecode/inheritance/Student
+  #11 = Utf8               major
+  #12 = Utf8               Ljava/lang/String;
+  #13 = Utf8               Code
+  #14 = Utf8               LineNumberTable
+  #15 = Utf8               setMajor
+  #16 = Utf8               (Ljava/lang/String;)V
+  #17 = Utf8               getMajor
+  #18 = Utf8               ()Ljava/lang/String;
+  #19 = Utf8               SourceFile
+  #20 = Utf8               Student.java
+{
+  public main.sourcecode.inheritance.Student();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method main/sourcecode/inheritance/Person."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public void setMajor(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #7                  // Field major:Ljava/lang/String;
+         5: return
+      LineNumberTable:
+        line 7: 0
+        line 8: 5
+
+  public java.lang.String getMajor();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #7                  // Field major:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 11: 0
+}
+SourceFile: "Student.java"

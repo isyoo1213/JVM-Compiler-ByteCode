@@ -1,0 +1,160 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/inheritance/Person.class
+  Last modified 2023. 4. 15.; size 1199 bytes
+  SHA-256 checksum 1adbb1351e9c75db033fc7881847d68c3f3e79ec769021c653d8640b973a0c33
+  Compiled from "Person.java"
+public class main.sourcecode.inheritance.Person
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // main/sourcecode/inheritance/Person
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 6, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/inheritance/Person.name:Ljava/lang/String;
+   #8 = Class              #10            // main/sourcecode/inheritance/Person
+   #9 = NameAndType        #11:#12        // name:Ljava/lang/String;
+  #10 = Utf8               main/sourcecode/inheritance/Person
+  #11 = Utf8               name
+  #12 = Utf8               Ljava/lang/String;
+  #13 = Fieldref           #8.#14         // main/sourcecode/inheritance/Person.age:I
+  #14 = NameAndType        #15:#16        // age:I
+  #15 = Utf8               age
+  #16 = Utf8               I
+  #17 = Fieldref           #18.#19        // java/lang/System.out:Ljava/io/PrintStream;
+  #18 = Class              #20            // java/lang/System
+  #19 = NameAndType        #21:#22        // out:Ljava/io/PrintStream;
+  #20 = Utf8               java/lang/System
+  #21 = Utf8               out
+  #22 = Utf8               Ljava/io/PrintStream;
+  #23 = InvokeDynamic      #0:#24         // #0:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+  #24 = NameAndType        #25:#26        // makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+  #25 = Utf8               makeConcatWithConstants
+  #26 = Utf8               (Ljava/lang/String;I)Ljava/lang/String;
+  #27 = Methodref          #28.#29        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #28 = Class              #30            // java/io/PrintStream
+  #29 = NameAndType        #31:#32        // println:(Ljava/lang/String;)V
+  #30 = Utf8               java/io/PrintStream
+  #31 = Utf8               println
+  #32 = Utf8               (Ljava/lang/String;)V
+  #33 = Utf8               Code
+  #34 = Utf8               LineNumberTable
+  #35 = Utf8               setName
+  #36 = Utf8               getName
+  #37 = Utf8               ()Ljava/lang/String;
+  #38 = Utf8               setAge
+  #39 = Utf8               (I)V
+  #40 = Utf8               getAge
+  #41 = Utf8               ()I
+  #42 = Utf8               printData
+  #43 = Utf8               SourceFile
+  #44 = Utf8               Person.java
+  #45 = Utf8               BootstrapMethods
+  #46 = MethodHandle       6:#47          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava
+/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #47 = Methodref          #48.#49        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljav
+a/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #48 = Class              #50            // java/lang/invoke/StringConcatFactory
+  #49 = NameAndType        #25:#51        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/S
+tring;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #50 = Utf8               java/lang/invoke/StringConcatFactory
+  #51 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invok
+e/CallSite;
+  #52 = String             #53            // \u0001:\u0001
+  #53 = Utf8               \u0001:\u0001
+  #54 = Utf8               InnerClasses
+  #55 = Class              #56            // java/lang/invoke/MethodHandles$Lookup
+  #56 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #57 = Class              #58            // java/lang/invoke/MethodHandles
+  #58 = Utf8               java/lang/invoke/MethodHandles
+  #59 = Utf8               Lookup
+{
+  public main.sourcecode.inheritance.Person();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public void setName(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #7                  // Field name:Ljava/lang/String;
+         5: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 5
+
+  public java.lang.String getName();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #7                  // Field name:Ljava/lang/String;
+         4: areturn
+      LineNumberTable:
+        line 12: 0
+
+  public void setAge(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #13                 // Field age:I
+         5: return
+      LineNumberTable:
+        line 16: 0
+        line 17: 5
+
+  public int getAge();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #13                 // Field age:I
+         4: ireturn
+      LineNumberTable:
+        line 20: 0
+
+  public void printData();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: getstatic     #17                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: getfield      #7                  // Field name:Ljava/lang/String;
+         7: aload_0
+         8: getfield      #13                 // Field age:I
+        11: invokedynamic #23,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;I)Ljava/lang/String;
+        16: invokevirtual #27                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        19: return
+      LineNumberTable:
+        line 24: 0
+        line 25: 19
+}
+SourceFile: "Person.java"
+BootstrapMethods:
+  0: #46 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/Metho
+dType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #52 \u0001:\u0001
+InnerClasses:
+  public static final #59= #55 of #57;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
