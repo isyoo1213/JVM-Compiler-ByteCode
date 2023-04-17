@@ -1,0 +1,228 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/overrideandload/Employee.class
+  Last modified 2023. 4. 17.; size 1704 bytes
+  SHA-256 checksum 165a24843f4f2d855c45c833e526bce7195d2142ff85bf943d1c64ac2d42120d
+  Compiled from "Employee.java"
+public class main.sourcecode.overrideandload.Employee extends main.sourcecode.overrideandload.Person
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #32                         // main/sourcecode/overrideandload/Employee
+  super_class: #2                         // main/sourcecode/overrideandload/Person
+  interfaces: 0, fields: 1, methods: 6, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // main/sourcecode/overrideandload/Person."<init>":()V
+   #2 = Class              #4             // main/sourcecode/overrideandload/Person
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               main/sourcecode/overrideandload/Person
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = String             #14            // Employee constructor call
+  #14 = Utf8               Employee constructor call
+  #15 = Methodref          #16.#17        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #16 = Class              #18            // java/io/PrintStream
+  #17 = NameAndType        #19:#20        // println:(Ljava/lang/String;)V
+  #18 = Utf8               java/io/PrintStream
+  #19 = Utf8               println
+  #20 = Utf8               (Ljava/lang/String;)V
+  #21 = Methodref          #2.#22         // main/sourcecode/overrideandload/Person."<init>":(Ljava/lang/String;I)V
+  #22 = NameAndType        #5:#23         // "<init>":(Ljava/lang/String;I)V
+  #23 = Utf8               (Ljava/lang/String;I)V
+  #24 = Methodref          #2.#25         // main/sourcecode/overrideandload/Person.setName:(Ljava/lang/String;)V
+  #25 = NameAndType        #26:#20        // setName:(Ljava/lang/String;)V
+  #26 = Utf8               setName
+  #27 = Fieldref           #2.#28         // main/sourcecode/overrideandload/Person.age:I
+  #28 = NameAndType        #29:#30        // age:I
+  #29 = Utf8               age
+  #30 = Utf8               I
+  #31 = Methodref          #32.#33        // main/sourcecode/overrideandload/Employee.setAge:(I)V
+  #32 = Class              #34            // main/sourcecode/overrideandload/Employee
+  #33 = NameAndType        #35:#36        // setAge:(I)V
+  #34 = Utf8               main/sourcecode/overrideandload/Employee
+  #35 = Utf8               setAge
+  #36 = Utf8               (I)V
+  #37 = Fieldref           #32.#28        // main/sourcecode/overrideandload/Employee.age:I
+  #38 = Fieldref           #32.#39        // main/sourcecode/overrideandload/Employee.empId:Ljava/lang/Long;
+  #39 = NameAndType        #40:#41        // empId:Ljava/lang/Long;
+  #40 = Utf8               empId
+  #41 = Utf8               Ljava/lang/Long;
+  #42 = String             #43            // Employee constructor(name, age, empId) call
+  #43 = Utf8               Employee constructor(name, age, empId) call
+  #44 = Methodref          #32.#45        // main/sourcecode/overrideandload/Employee.getName:()Ljava/lang/String;
+  #45 = NameAndType        #46:#47        // getName:()Ljava/lang/String;
+  #46 = Utf8               getName
+  #47 = Utf8               ()Ljava/lang/String;
+  #48 = Methodref          #32.#49        // main/sourcecode/overrideandload/Employee.getAge:()I
+  #49 = NameAndType        #50:#51        // getAge:()I
+  #50 = Utf8               getAge
+  #51 = Utf8               ()I
+  #52 = Methodref          #32.#53        // main/sourcecode/overrideandload/Employee.getEmpId:()Ljava/lang/Long;
+  #53 = NameAndType        #54:#55        // getEmpId:()Ljava/lang/Long;
+  #54 = Utf8               getEmpId
+  #55 = Utf8               ()Ljava/lang/Long;
+  #56 = InvokeDynamic      #0:#57         // #0:makeConcatWithConstants:(Ljava/lang/String;ILjava/lang/Long;)Ljava/lang/String;
+  #57 = NameAndType        #58:#59        // makeConcatWithConstants:(Ljava/lang/String;ILjava/lang/Long;)Ljava/lang/String;
+  #58 = Utf8               makeConcatWithConstants
+  #59 = Utf8               (Ljava/lang/String;ILjava/lang/Long;)Ljava/lang/String;
+  #60 = Methodref          #2.#61         // main/sourcecode/overrideandload/Person.toString:()Ljava/lang/String;
+  #61 = NameAndType        #62:#47        // toString:()Ljava/lang/String;
+  #62 = Utf8               toString
+  #63 = InvokeDynamic      #1:#64         // #1:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/String;
+  #64 = NameAndType        #58:#65        // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/String;
+  #65 = Utf8               (Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/String;
+  #66 = Utf8               Code
+  #67 = Utf8               LineNumberTable
+  #68 = Utf8               (Ljava/lang/String;ILjava/lang/Long;)V
+  #69 = Utf8               setEmpId
+  #70 = Utf8               (Ljava/lang/Long;)V
+  #71 = Utf8               printData
+  #72 = Utf8               SourceFile
+  #73 = Utf8               Employee.java
+  #74 = Utf8               BootstrapMethods
+  #75 = MethodHandle       6:#76          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/
+lang/Object;)Ljava/lang/invoke/CallSite;
+  #76 = Methodref          #77.#78        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljav
+a/lang/invoke/CallSite;
+  #77 = Class              #79            // java/lang/invoke/StringConcatFactory
+  #78 = NameAndType        #58:#80        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #79 = Utf8               java/lang/invoke/StringConcatFactory
+  #80 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #81 = String             #82            // \u0001:\u0001:\u0001
+  #82 = Utf8               \u0001:\u0001:\u0001
+  #83 = String             #84            // \u0001:\u0001
+  #84 = Utf8               \u0001:\u0001
+  #85 = Utf8               InnerClasses
+  #86 = Class              #87            // java/lang/invoke/MethodHandles$Lookup
+  #87 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #88 = Class              #89            // java/lang/invoke/MethodHandles
+  #89 = Utf8               java/lang/invoke/MethodHandles
+  #90 = Utf8               Lookup
+{
+  public main.sourcecode.overrideandload.Employee();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method main/sourcecode/overrideandload/Person."<init>":()V
+         4: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         7: ldc           #13                 // String Employee constructor call
+         9: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        12: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 4
+        line 8: 12
+
+  public main.sourcecode.overrideandload.Employee(java.lang.String, int, java.lang.Long);
+    descriptor: (Ljava/lang/String;ILjava/lang/Long;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=4, args_size=4
+         0: aload_0
+         1: aload_1
+         2: iconst_0
+         3: invokespecial #21                 // Method main/sourcecode/overrideandload/Person."<init>":(Ljava/lang/String;I)V
+         6: aload_0
+         7: aload_1
+         8: invokespecial #24                 // Method main/sourcecode/overrideandload/Person.setName:(Ljava/lang/String;)V
+        11: aload_0
+        12: iload_2
+        13: putfield      #27                 // Field main/sourcecode/overrideandload/Person.age:I
+        16: aload_0
+        17: iload_2
+        18: invokevirtual #31                 // Method setAge:(I)V
+        21: aload_0
+        22: iload_2
+        23: putfield      #37                 // Field age:I
+        26: aload_0
+        27: aload_3
+        28: putfield      #38                 // Field empId:Ljava/lang/Long;
+        31: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        34: ldc           #42                 // String Employee constructor(name, age, empId) call
+        36: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        39: return
+      LineNumberTable:
+        line 14: 0
+        line 16: 6
+        line 18: 11
+        line 23: 16
+        line 24: 21
+        line 28: 26
+        line 29: 31
+        line 30: 39
+
+  public void setEmpId(java.lang.Long);
+    descriptor: (Ljava/lang/Long;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #38                 // Field empId:Ljava/lang/Long;
+         5: return
+      LineNumberTable:
+        line 33: 0
+        line 34: 5
+
+  public java.lang.Long getEmpId();
+    descriptor: ()Ljava/lang/Long;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #38                 // Field empId:Ljava/lang/Long;
+         4: areturn
+      LineNumberTable:
+        line 37: 0
+
+  public void printData();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: invokevirtual #44                 // Method getName:()Ljava/lang/String;
+         7: aload_0
+         8: invokevirtual #48                 // Method getAge:()I
+        11: aload_0
+        12: invokevirtual #52                 // Method getEmpId:()Ljava/lang/Long;
+        15: invokedynamic #56,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;ILjava/lang/Long;)Ljava/lang/String;
+        20: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        23: return
+      LineNumberTable:
+        line 42: 0
+        line 43: 23
+
+  public java.lang.String toString();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #60                 // Method main/sourcecode/overrideandload/Person.toString:()Ljava/lang/String;
+         4: aload_0
+         5: invokevirtual #52                 // Method getEmpId:()Ljava/lang/Long;
+         8: invokedynamic #63,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/Long;)Ljava/lang/String;
+        13: areturn
+      LineNumberTable:
+        line 47: 0
+}
+SourceFile: "Employee.java"
+BootstrapMethods:
+  0: #75 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallS
+ite;
+    Method arguments:
+      #81 \u0001:\u0001:\u0001
+  1: #75 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallS
+ite;
+    Method arguments:
+      #83 \u0001:\u0001
+InnerClasses:
+  public static final #90= #86 of #88;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
