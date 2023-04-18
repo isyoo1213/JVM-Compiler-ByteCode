@@ -1,0 +1,155 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/abstractclass/Employee.class
+  Last modified 2023. 4. 17.; size 752 bytes
+  SHA-256 checksum e3bacb0d4e57f75c553e1563447cb5f50d541a78eb1f60daa3617aad62beb827
+  Compiled from "Employee.java"
+abstract class main.sourcecode.abstractclass.Employee
+  minor version: 0
+  major version: 61
+  flags: (0x0420) ACC_SUPER, ACC_ABSTRACT
+  this_class: #8                          // main/sourcecode/abstractclass/Employee
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 4, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/abstractclass/Employee.SEQUENCE_IMPID:Ljava/lang/Long;
+   #8 = Class              #10            // main/sourcecode/abstractclass/Employee
+   #9 = NameAndType        #11:#12        // SEQUENCE_IMPID:Ljava/lang/Long;
+  #10 = Utf8               main/sourcecode/abstractclass/Employee
+  #11 = Utf8               SEQUENCE_IMPID
+  #12 = Utf8               Ljava/lang/Long;
+  #13 = Methodref          #14.#15        // java/lang/Long.longValue:()J
+  #14 = Class              #16            // java/lang/Long
+  #15 = NameAndType        #17:#18        // longValue:()J
+  #16 = Utf8               java/lang/Long
+  #17 = Utf8               longValue
+  #18 = Utf8               ()J
+  #19 = Methodref          #14.#20        // java/lang/Long.valueOf:(J)Ljava/lang/Long;
+  #20 = NameAndType        #21:#22        // valueOf:(J)Ljava/lang/Long;
+  #21 = Utf8               valueOf
+  #22 = Utf8               (J)Ljava/lang/Long;
+  #23 = Fieldref           #8.#24         // main/sourcecode/abstractclass/Employee.empId:Ljava/lang/Long;
+  #24 = NameAndType        #25:#12        // empId:Ljava/lang/Long;
+  #25 = Utf8               empId
+  #26 = Long               100l
+  #28 = Utf8               basicSalary
+  #29 = Utf8               I
+  #30 = Utf8               ConstantValue
+  #31 = Integer            10000
+  #32 = Utf8               Code
+  #33 = Utf8               LineNumberTable
+  #34 = Utf8               (Lmain/sourcecode/abstractclass/Employee;)V
+  #35 = Utf8               StackMapTable
+  #36 = Utf8               calcSalary
+  #37 = Utf8               ()I
+  #38 = Utf8               <clinit>
+  #39 = Utf8               SourceFile
+  #40 = Utf8               Employee.java
+{
+  protected static java.lang.Long SEQUENCE_IMPID;
+    descriptor: Ljava/lang/Long;
+    flags: (0x000c) ACC_PROTECTED, ACC_STATIC
+
+  protected static final int basicSalary;
+    descriptor: I
+    flags: (0x001c) ACC_PROTECTED, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 10000
+
+  protected java.lang.Long empId;
+    descriptor: Ljava/lang/Long;
+    flags: (0x0004) ACC_PROTECTED
+
+  public main.sourcecode.abstractclass.Employee();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=2, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: getstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+         7: astore_1
+         8: getstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+    *1  11: invokevirtual #13                 // Method java/lang/Long.longValue:()J
+        14: lconst_1
+        15: ladd
+    *1  16: invokestatic  #19                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+        19: putstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+        22: aload_1
+        23: pop
+        24: aload_0
+        25: getstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+        28: putfield      #23                 // Field empId:Ljava/lang/Long;
+        31: return
+      LineNumberTable:
+        line 8: 0
+        line 9: 4
+        line 10: 24
+        line 11: 31
+
+  public main.sourcecode.abstractclass.Employee(main.sourcecode.abstractclass.Employee);
+    descriptor: (Lmain/sourcecode/abstractclass/Employee;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=3, args_size=2
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_1
+    *2   5: ifnonnull     35
+         8: getstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+        11: astore_2
+        12: getstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+        15: invokevirtual #13                 // Method java/lang/Long.longValue:()J
+        18: lconst_1
+        19: ladd
+        20: invokestatic  #19                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+        23: putstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+        26: aload_2
+        27: pop
+        28: aload_0
+        29: getstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+        32: putfield      #23                 // Field empId:Ljava/lang/Long;
+        35: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 4
+        line 15: 8
+        line 16: 28
+        line 18: 35
+      StackMapTable: number_of_entries = 1
+        frame_type = 255 /* full_frame */
+          offset_delta = 35
+          locals = [ class main/sourcecode/abstractclass/Employee, class main/sourcecode/abstractclass/Employee ]
+          stack = []
+
+  public abstract int calcSalary();
+    descriptor: ()I
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+    *3   0: ldc2_w        #26                 // long 100l
+         3: invokestatic  #19                 // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+         6: putstatic     #7                  // Field SEQUENCE_IMPID:Ljava/lang/Long;
+         9: return
+      LineNumberTable:
+        line 4: 0
+}
+SourceFile: "Employee.java"
+
+----- 포인트
+
+*1 - Long/long의 처리
+    Long.valueOf() - String, radix(기수 - 진법을 나타내는 수) -> 특정 진법의 문자들을 처리하고 Long타입 Object로 반환해줌
+    Long.longValue() - Long 타입 객체의 long value를 long 타입으로 반환해줌
+*2 - if 분기의 처리 - ifnonnull
+    ifnonnull 35 -> 이때의 operand는 '명령어가 저장된 byte 위치'(branchbyte)를 나타내는 것으로 유추
+    cf) bipush 33 -> 이때는 33이라는 값의 바이트코드로 표시된 정보를 의미했음 - 이 경우 stack은 -> value, otherbytes는 1:byte로 byte로 변환된 int value 자체를 의미하는 것으로 유추
+*3 - static으로 설정된 Long 필드의 처리
+    cosntant pool에 설정된 리터럴을 실제 Long 타입 객체로 박싱해주는 역할로 유추
