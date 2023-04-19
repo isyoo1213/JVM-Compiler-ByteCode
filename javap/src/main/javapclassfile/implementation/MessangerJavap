@@ -1,0 +1,124 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/implementation/Messanger.class
+  Last modified 2023. 4. 19.; size 881 bytes
+  SHA-256 checksum 38fcb72189867818c14eece074754730d21ad2aa53c3202bc5421629bd850555
+  Compiled from "Messanger.java"
+public interface main.sourcecode.implementation.Messanger
+  minor version: 0
+  major version: 61
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #2                          // main/sourcecode/implementation/Messanger
+  super_class: #33                        // java/lang/Object
+  interfaces: 0, fields: 2, methods: 6, attributes: 1
+Constant pool:
+   #1 = InterfaceMethodref #2.#3          // main/sourcecode/implementation/Messanger.log:()V
+   #2 = Class              #4             // main/sourcecode/implementation/Messanger
+   #3 = NameAndType        #5:#6          // log:()V
+   #4 = Utf8               main/sourcecode/implementation/Messanger
+   #5 = Utf8               log
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = String             #14            // 로그인 처리
+  #14 = Utf8               로그인 처리
+  #15 = Methodref          #16.#17        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #16 = Class              #18            // java/io/PrintStream
+  #17 = NameAndType        #19:#20        // println:(Ljava/lang/String;)V
+  #18 = Utf8               java/io/PrintStream
+  #19 = Utf8               println
+  #20 = Utf8               (Ljava/lang/String;)V
+  #21 = String             #22            // 로그아웃 처리
+  #22 = Utf8               로그아웃 처리
+  #23 = String             #24            // 로그 처리
+  #24 = Utf8               로그 처리
+  #25 = String             #26            // 커넥션 획득 처리
+  #26 = Utf8               커넥션 획득 처리
+  #27 = InterfaceMethodref #2.#28         // main/sourcecode/implementation/Messanger.getDBAddress:()Ljava/lang/String;
+  #28 = NameAndType        #29:#30        // getDBAddress:()Ljava/lang/String;
+  #29 = Utf8               getDBAddress
+  #30 = Utf8               ()Ljava/lang/String;
+  #31 = String             #32            // 123.123.12
+  #32 = Utf8               123.123.12
+  #33 = Class              #34            // java/lang/Object
+  #34 = Utf8               java/lang/Object
+  #35 = Utf8               MIN_SIZE
+  #36 = Utf8               I
+  #37 = Utf8               ConstantValue
+  #38 = Integer            1
+  #39 = Utf8               MAX_SIZE
+  #40 = Integer            1000
+  #41 = Utf8               getMessage
+  #42 = Utf8               setMessage
+  #43 = Utf8               setLogin
+  #44 = Utf8               Code
+  #45 = Utf8               LineNumberTable
+  #46 = Utf8               StackMapTable
+  #47 = Utf8               getConnection
+  #48 = Utf8               SourceFile
+  #49 = Utf8               Messanger.java
+{
+  public static final int MIN_SIZE;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 1
+
+  public static final int MAX_SIZE;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 1000
+
+  public abstract java.lang.String getMessage();
+    descriptor: ()Ljava/lang/String;
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public abstract void setMessage(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public default void setLogin(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: invokeinterface #1,  1            // InterfaceMethod log:()V
+         6: aload_1
+         7: ifnull        21
+        10: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        13: ldc           #13                 // String 로그인 처리
+        15: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        18: goto          29
+        21: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        24: ldc           #21                 // String 로그아웃 처리
+        26: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        29: return
+      LineNumberTable:
+        line 13: 0
+        line 14: 6
+        line 15: 10
+        line 17: 21
+        line 19: 29
+      StackMapTable: number_of_entries = 2
+        frame_type = 21 /* same */
+        frame_type = 7 /* same */
+
+  public static void getConnection();
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #25                 // String 커넥션 획득 처리
+         5: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: invokestatic  #27                 // InterfaceMethod getDBAddress:()Ljava/lang/String;
+        11: pop
+        12: return
+      LineNumberTable:
+        line 26: 0
+        line 27: 8
+        line 28: 12
+}
+SourceFile: "Messanger.java"
