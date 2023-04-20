@@ -1,6 +1,6 @@
 package main.sourcecode.implementation;
 
-public class IPhoneMessanger implements Messanger{
+public class IPhoneMessanger extends GraphicIOS implements Messanger{
     @Override
     public String getMessage() {
         return "Iphone";
