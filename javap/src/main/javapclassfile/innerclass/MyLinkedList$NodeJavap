@@ -1,0 +1,78 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/innerclass/MyLinkedList$Node.class
+  Last modified 2023. 4. 21.; size 596 bytes
+  SHA-256 checksum d12a6830556d4d93ca79f709d7e8a5155588940f581ac0bdbb702fbc4814a159
+  Compiled from "MyLinkedList.java"
+class main.sourcecode.innerclass.MyLinkedList$Node
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #2                          // main/sourcecode/innerclass/MyLinkedList$Node
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 3, methods: 1, attributes: 3
+Constant pool:
+   #1 = Fieldref           #2.#3          // main/sourcecode/innerclass/MyLinkedList$Node.this$0:Lmain/sourcecode/innerclass/MyLinkedList;
+   #2 = Class              #4             // main/sourcecode/innerclass/MyLinkedList$Node
+*1 #3 = NameAndType        #5:#6          // this$0:Lmain/sourcecode/innerclass/MyLinkedList;
+   #4 = Utf8               main/sourcecode/innerclass/MyLinkedList$Node
+   #5 = Utf8               this$0
+   #6 = Utf8               Lmain/sourcecode/innerclass/MyLinkedList;
+   #7 = Methodref          #8.#9          // java/lang/Object."<init>":()V
+   #8 = Class              #10            // java/lang/Object
+   #9 = NameAndType        #11:#12        // "<init>":()V
+  #10 = Utf8               java/lang/Object
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Fieldref           #2.#14         // main/sourcecode/innerclass/MyLinkedList$Node.data:Ljava/lang/String;
+  #14 = NameAndType        #15:#16        // data:Ljava/lang/String;
+  #15 = Utf8               data
+  #16 = Utf8               Ljava/lang/String;
+  #17 = Utf8               link
+  #18 = Utf8               Lmain/sourcecode/innerclass/MyLinkedList$Node;
+*2#19 = Utf8               (Lmain/sourcecode/innerclass/MyLinkedList;Ljava/lang/String;)V
+  #20 = Utf8               Code
+  #21 = Utf8               LineNumberTable
+  #22 = Utf8               SourceFile
+  #23 = Utf8               MyLinkedList.java
+  #24 = Utf8               NestHost
+  #25 = Class              #26            // main/sourcecode/innerclass/MyLinkedList
+  #26 = Utf8               main/sourcecode/innerclass/MyLinkedList
+  #27 = Utf8               InnerClasses
+  #28 = Utf8               Node
+{
+*3final main.sourcecode.innerclass.MyLinkedList this$0;
+    descriptor: Lmain/sourcecode/innerclass/MyLinkedList;
+    flags: (0x1010) ACC_FINAL, ACC_SYNTHETIC
+
+  public main.sourcecode.innerclass.MyLinkedList$Node(main.sourcecode.innerclass.MyLinkedList, java.lang.String);
+    descriptor: (Lmain/sourcecode/innerclass/MyLinkedList;Ljava/lang/String;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=3, args_size=3
+         0: aload_0
+         1: aload_1
+  *4     2: putfield      #1                  // Field this$0:Lmain/sourcecode/innerclass/MyLinkedList;
+         5: aload_0
+         6: invokespecial #7                  // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: aload_2
+        11: putfield      #13                 // Field data:Ljava/lang/String;
+        14: return
+      LineNumberTable:
+        line 12: 0
+        line 13: 9
+        line 14: 14
+}
+SourceFile: "MyLinkedList.java"
+NestHost: class main/sourcecode/innerclass/MyLinkedList
+
+---------------------
+*1 - innerClass 내부의 필드는 this를 통해 가리킴
+    this는 인스턴스를 지칭할 때 사용 -> $Node는 MyLinkedList.class 내부에서만 사용되므로, 이에 해당하는 outerClass의 인스턴스를 가리키는 것으로 유추
+    + fields:3 으로 명세하고 있음 -> this$0 이라는 필드를 자동으로 추가하는 것으로 유추됨
+
+*2 - 생성자에서 사용되는 리터럴로 유추됨. 즉, this$0 이 자동생성 되는 것처럼 생성자에서도 outerClass에 대한 정보가 필요한 것으로 유추
+*3 - final로 선언 + flas로 ACC_SYNTHETIC를 가짐
+*4 - $Node의 필드로 outerClass의 인스턴스를 가지고 있음 -> 엄청 강한 결합으로 유추됨
+    + 이렇게 outerClass의 인스턴스를 필드로 설정한 후에야, Object."<init>"의 초기화가 실행됨 -> 이후에 실제 $Node의 필드들을 초기화
+
+*** 자기 자신의 타입으로 하는 필드를 가질 경우, 따로 constantpool에 명세하지 않음 -> 해당 정보는 클래스에 존재 -> 참조 변수 이름의 리터럴 정도만 명세함
