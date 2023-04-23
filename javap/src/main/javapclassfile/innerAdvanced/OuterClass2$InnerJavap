@@ -1,0 +1,156 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/innerAdvanced/OuterClass2$Inner.class
+  Last modified 2023. 4. 23.; size 1100 bytes
+  SHA-256 checksum 0a55c012f28fb1cfab557f4ba24423447f890ff30a44adef2a7f966d6b3d900c
+  Compiled from "outerclass2.java"
+class main.sourcecode.innerAdvanced.OuterClass2$Inner
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #8                          // main/sourcecode/innerAdvanced/OuterClass2$Inner
+  super_class: #41                        // java/lang/Object
+  interfaces: 0, fields: 5, methods: 4, attributes: 3
+Constant pool:
+   #1 = Fieldref           #2.#3          // java/lang/System.out:Ljava/io/PrintStream;
+   #2 = Class              #4             // java/lang/System
+   #3 = NameAndType        #5:#6          // out:Ljava/io/PrintStream;
+   #4 = Utf8               java/lang/System
+   #5 = Utf8               out
+   #6 = Utf8               Ljava/io/PrintStream;
+   #7 = Fieldref           #8.#9          // main/sourcecode/innerAdvanced/OuterClass2$Inner.this$0:Lmain/sourcecode/innerAdvanced/OuterClass2;
+   #8 = Class              #10            // main/sourcecode/innerAdvanced/OuterClass2$Inner
+   #9 = NameAndType        #11:#12        // this$0:Lmain/sourcecode/innerAdvanced/OuterClass2;
+  #10 = Utf8               main/sourcecode/innerAdvanced/OuterClass2$Inner
+  #11 = Utf8               this$0
+  #12 = Utf8               Lmain/sourcecode/innerAdvanced/OuterClass2;
+  #13 = Fieldref           #14.#15        // main/sourcecode/innerAdvanced/OuterClass2.num:I
+  #14 = Class              #16            // main/sourcecode/innerAdvanced/OuterClass2
+  #15 = NameAndType        #17:#18        // num:I
+  #16 = Utf8               main/sourcecode/innerAdvanced/OuterClass2
+  #17 = Utf8               num
+  #18 = Utf8               I
+  #19 = Methodref          #20.#21        // java/io/PrintStream.println:(I)V
+  #20 = Class              #22            // java/io/PrintStream
+  #21 = NameAndType        #23:#24        // println:(I)V
+  #22 = Utf8               java/io/PrintStream
+  #23 = Utf8               println
+  #24 = Utf8               (I)V
+  #25 = Fieldref           #14.#26        // main/sourcecode/innerAdvanced/OuterClass2.staticNum:I
+  #26 = NameAndType        #27:#18        // staticNum:I
+  #27 = Utf8               staticNum
+  #28 = Fieldref           #8.#29         // main/sourcecode/innerAdvanced/OuterClass2$Inner.inum:I
+  #29 = NameAndType        #30:#18        // inum:I
+  #30 = Utf8               inum
+  #31 = Fieldref           #8.#32         // main/sourcecode/innerAdvanced/OuterClass2$Inner.staticiNum:I
+  #32 = NameAndType        #33:#18        // staticiNum:I
+  #33 = Utf8               staticiNum
+  #34 = Integer            4845214
+  #35 = String             #36            // koala
+  #36 = Utf8               koala
+  #37 = Methodref          #20.#38        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #38 = NameAndType        #23:#39        // println:(Ljava/lang/String;)V
+  #39 = Utf8               (Ljava/lang/String;)V
+  #40 = Methodref          #41.#42        // java/lang/Object."<init>":()V
+  #41 = Class              #43            // java/lang/Object
+  #42 = NameAndType        #44:#45        // "<init>":()V
+  #43 = Utf8               java/lang/Object
+  #44 = Utf8               <init>
+  #45 = Utf8               ()V
+  #46 = Utf8               STATIC_FINAL
+  #47 = Utf8               ConstantValue
+  #48 = Utf8               STATIC_FINAL_STRING
+  #49 = Utf8               Ljava/lang/String;
+  #50 = Utf8               innerTest
+  #51 = Utf8               Code
+  #52 = Utf8               LineNumberTable
+  #53 = Utf8               getStaticFromInner
+  #54 = Utf8               ()I
+  #55 = Utf8               (Lmain/sourcecode/innerAdvanced/OuterClass2;)V
+  #56 = Utf8               <clinit>
+  #57 = Utf8               SourceFile
+  #58 = Utf8               outerclass2.java
+  #59 = Utf8               NestHost
+  #60 = Utf8               InnerClasses
+  #61 = Utf8               Inner
+{
+  final main.sourcecode.innerAdvanced.OuterClass2 this$0;
+    descriptor: Lmain/sourcecode/innerAdvanced/OuterClass2;
+    flags: (0x1010) ACC_FINAL, ACC_SYNTHETIC
+
+  public void innerTest();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #1                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: getfield      #7                  // Field this$0:Lmain/sourcecode/innerAdvanced/OuterClass2;
+         7: getfield      #13                 // Field main/sourcecode/innerAdvanced/OuterClass2.num:I
+        10: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+        13: getstatic     #1                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        16: getstatic     #25                 // Field main/sourcecode/innerAdvanced/OuterClass2.staticNum:I
+        19: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+        22: getstatic     #1                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        25: aload_0
+        26: getfield      #28                 // Field inum:I
+        29: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+        32: getstatic     #1                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        35: getstatic     #31                 // Field staticiNum:I
+        38: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+        41: getstatic     #1                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        44: ldc           #34                 // int 4845214
+        46: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+        49: getstatic     #1                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        52: ldc           #35                 // String koala
+        54: invokevirtual #37                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        57: return
+      LineNumberTable:
+        line 35: 0
+        line 36: 13
+        line 37: 22
+        line 38: 32
+        line 39: 41
+        line 40: 49
+        line 41: 57
+
+  public int getStaticFromInner();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: getstatic     #31                 // Field staticiNum:I
+         3: ireturn
+      LineNumberTable:
+        line 45: 0
+
+  public main.sourcecode.innerAdvanced.OuterClass2$Inner(main.sourcecode.innerAdvanced.OuterClass2);
+    descriptor: (Lmain/sourcecode/innerAdvanced/OuterClass2;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: aload_1
+         2: putfield      #7                  // Field this$0:Lmain/sourcecode/innerAdvanced/OuterClass2;
+         5: aload_0
+         6: invokespecial #40                 // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: iconst_3
+        11: putfield      #28                 // Field inum:I
+        14: return
+      LineNumberTable:
+        line 48: 0
+        line 26: 9
+        line 49: 14
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_4
+         1: putstatic     #31                 // Field staticiNum:I
+         4: return
+      LineNumberTable:
+        line 30: 0
+}
+SourceFile: "outerclass2.java"
+NestHost: class main/sourcecode/innerAdvanced/OuterClass2

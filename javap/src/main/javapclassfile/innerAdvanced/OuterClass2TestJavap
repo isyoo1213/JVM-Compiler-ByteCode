@@ -1,0 +1,85 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/innerAdvanced/OuterClass2Test.class
+  Last modified 2023. 4. 23.; size 752 bytes
+  SHA-256 checksum b593d489a9c227539429d17ae7153c09b9e627ebe4810b14c1bca62fff277580
+  Compiled from "OuterClass2Test.java"
+public class main.sourcecode.innerAdvanced.OuterClass2Test
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #21                         // main/sourcecode/innerAdvanced/OuterClass2Test
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 2
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // main/sourcecode/innerAdvanced/OuterClass2
+   #8 = Utf8               main/sourcecode/innerAdvanced/OuterClass2
+   #9 = Methodref          #7.#3          // main/sourcecode/innerAdvanced/OuterClass2."<init>":()V
+  #10 = Methodref          #7.#11         // main/sourcecode/innerAdvanced/OuterClass2.outerTest:()V
+  #11 = NameAndType        #12:#6         // outerTest:()V
+  #12 = Utf8               outerTest
+  #13 = Methodref          #7.#14         // main/sourcecode/innerAdvanced/OuterClass2.getInner:()Lmain/sourcecode/innerAdvanced/OuterClass2$Inner;
+  #14 = NameAndType        #15:#16        // getInner:()Lmain/sourcecode/innerAdvanced/OuterClass2$Inner;
+  #15 = Utf8               getInner
+  #16 = Utf8               ()Lmain/sourcecode/innerAdvanced/OuterClass2$Inner;
+  #17 = Methodref          #7.#18         // main/sourcecode/innerAdvanced/OuterClass2.getStaticInner:()Lmain/sourcecode/innerAdvanced/OuterClass2$StaticInner;
+  #18 = NameAndType        #19:#20        // getStaticInner:()Lmain/sourcecode/innerAdvanced/OuterClass2$StaticInner;
+  #19 = Utf8               getStaticInner
+  #20 = Utf8               ()Lmain/sourcecode/innerAdvanced/OuterClass2$StaticInner;
+  #21 = Class              #22            // main/sourcecode/innerAdvanced/OuterClass2Test
+  #22 = Utf8               main/sourcecode/innerAdvanced/OuterClass2Test
+  #23 = Utf8               Code
+  #24 = Utf8               LineNumberTable
+  #25 = Utf8               main
+  #26 = Utf8               ([Ljava/lang/String;)V
+  #27 = Utf8               SourceFile
+  #28 = Utf8               OuterClass2Test.java
+  #29 = Utf8               InnerClasses
+  #30 = Class              #31            // main/sourcecode/innerAdvanced/OuterClass2$Inner
+  #31 = Utf8               main/sourcecode/innerAdvanced/OuterClass2$Inner
+  #32 = Utf8               Inner
+  #33 = Class              #34            // main/sourcecode/innerAdvanced/OuterClass2$StaticInner
+  #34 = Utf8               main/sourcecode/innerAdvanced/OuterClass2$StaticInner
+  #35 = Utf8               StaticInner
+{
+  public main.sourcecode.innerAdvanced.OuterClass2Test();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=1
+         0: new           #7                  // class main/sourcecode/innerAdvanced/OuterClass2
+         3: dup
+         4: invokespecial #9                  // Method main/sourcecode/innerAdvanced/OuterClass2."<init>":()V
+         7: astore_1
+         8: aload_1
+         9: invokevirtual #10                 // Method main/sourcecode/innerAdvanced/OuterClass2.outerTest:()V
+        12: aload_1
+        13: invokevirtual #13                 // Method main/sourcecode/innerAdvanced/OuterClass2.getInner:()Lmain/sourcecode/innerAdvanced/OuterClass2$Inner;
+        16: pop
+        17: aload_1
+        18: invokevirtual #17                 // Method main/sourcecode/innerAdvanced/OuterClass2.getStaticInner:()Lmain/sourcecode/innerAdvanced/OuterClass2$StaticInner;
+        21: pop
+        22: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 8
+        line 7: 12
+        line 8: 17
+        line 9: 22
+}
+SourceFile: "OuterClass2Test.java"
