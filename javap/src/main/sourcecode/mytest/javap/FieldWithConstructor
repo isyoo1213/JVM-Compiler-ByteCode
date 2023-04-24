@@ -1,0 +1,104 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/mytest/FieldWIthConstructor.class
+  Last modified 2023. 4. 24.; size 530 bytes
+  SHA-256 checksum 11dda18bdc5766f0b8be56b143dda196c701d36e888f87edfbb67816214f7a91
+  Compiled from "FieldWIthConstructor.java"
+public class main.sourcecode.mytest.FieldWIthConstructor
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // main/sourcecode/mytest/FieldWIthConstructor
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 6, methods: 1, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/mytest/FieldWIthConstructor.age:I
+   #8 = Class              #10            // main/sourcecode/mytest/FieldWIthConstructor
+   #9 = NameAndType        #11:#12        // age:I
+  #10 = Utf8               main/sourcecode/mytest/FieldWIthConstructor
+  #11 = Utf8               age
+  #12 = Utf8               I
+  #13 = String             #14            // koala
+  #14 = Utf8               koala
+  #15 = Fieldref           #8.#16         // main/sourcecode/mytest/FieldWIthConstructor.name:Ljava/lang/String;
+  #16 = NameAndType        #17:#18        // name:Ljava/lang/String;
+  #17 = Utf8               name
+  #18 = Utf8               Ljava/lang/String;
+  #19 = Fieldref           #8.#20         // main/sourcecode/mytest/FieldWIthConstructor.publicAge:I
+  #20 = NameAndType        #21:#12        // publicAge:I
+  #21 = Utf8               publicAge
+  #22 = String             #23            // azma
+  #23 = Utf8               azma
+  #24 = Fieldref           #8.#25         // main/sourcecode/mytest/FieldWIthConstructor.publicName:Ljava/lang/String;
+  #25 = NameAndType        #26:#18        // publicName:Ljava/lang/String;
+  #26 = Utf8               publicName
+  #27 = Utf8               androidAge
+  #28 = Utf8               ConstantValue
+  #29 = Integer            5
+  #30 = Utf8               androidName
+  #31 = String             #32            // and_azma
+  #32 = Utf8               and_azma
+  #33 = Utf8               Code
+  #34 = Utf8               LineNumberTable
+  #35 = Utf8               SourceFile
+  #36 = Utf8               FieldWIthConstructor.java
+{
+  public int age;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public java.lang.String name;
+    descriptor: Ljava/lang/String;
+    flags: (0x0001) ACC_PUBLIC
+
+  public static int publicAge;
+    descriptor: I
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public static java.lang.String publicName;
+    descriptor: Ljava/lang/String;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public static final int androidAge;
+    descriptor: I
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: int 5
+
+  public static final java.lang.String androidName;
+    descriptor: Ljava/lang/String;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: String and_azma
+
+  public main.sourcecode.mytest.FieldWIthConstructor();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: bipush        10
+         7: putfield      #7                  // Field age:I
+        10: aload_0
+        11: ldc           #13                 // String koala
+        13: putfield      #15                 // Field name:Ljava/lang/String;
+        16: aload_0
+        17: pop
+        18: iconst_3
+        19: putstatic     #19                 // Field publicAge:I
+        22: ldc           #22                 // String azma
+        24: putstatic     #24                 // Field publicName:Ljava/lang/String;
+        27: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 4
+        line 13: 10
+        line 14: 16
+        line 15: 22
+        line 16: 27
+}
+SourceFile: "FieldWIthConstructor.java"
