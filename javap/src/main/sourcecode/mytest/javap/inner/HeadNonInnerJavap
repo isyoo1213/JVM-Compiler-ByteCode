@@ -1,0 +1,111 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/mytest/inner/HeadNonInner.class
+  Last modified 2023. 4. 25.; size 630 bytes
+  SHA-256 checksum fca31e3f074066e12dba1428afbe4fae4d8c109f0e778b8fcc1e849f01a19499
+  Compiled from "HeadNonInner.java"
+public class main.sourcecode.mytest.inner.HeadNonInner
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // main/sourcecode/mytest/inner/HeadNonInner
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 5, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/mytest/inner/HeadNonInner.amount:I
+   #8 = Class              #10            // main/sourcecode/mytest/inner/HeadNonInner
+   #9 = NameAndType        #11:#12        // amount:I
+  #10 = Utf8               main/sourcecode/mytest/inner/HeadNonInner
+  #11 = Utf8               amount
+  #12 = Utf8               I
+  #13 = Fieldref           #8.#14         // main/sourcecode/mytest/inner/HeadNonInner.weight:I
+  #14 = NameAndType        #15:#12        // weight:I
+  #15 = Utf8               weight
+  #16 = Fieldref           #8.#17         // main/sourcecode/mytest/inner/HeadNonInner.size:I
+  #17 = NameAndType        #18:#12        // size:I
+  #18 = Utf8               size
+  #19 = Class              #20            // main/sourcecode/mytest/inner/HairStateNonInner
+  #20 = Utf8               main/sourcecode/mytest/inner/HairStateNonInner
+  #21 = Methodref          #19.#22        // main/sourcecode/mytest/inner/HairStateNonInner."<init>":(Lmain/sourcecode/mytest/inner/HeadNonInner;)V
+  #22 = NameAndType        #5:#23         // "<init>":(Lmain/sourcecode/mytest/inner/HeadNonInner;)V
+  #23 = Utf8               (Lmain/sourcecode/mytest/inner/HeadNonInner;)V
+  #24 = Fieldref           #8.#25         // main/sourcecode/mytest/inner/HeadNonInner.hairState:Lmain/sourcecode/mytest/inner/HairStateNonInner;
+  #25 = NameAndType        #26:#27        // hairState:Lmain/sourcecode/mytest/inner/HairStateNonInner;
+  #26 = Utf8               hairState
+  #27 = Utf8               Lmain/sourcecode/mytest/inner/HairStateNonInner;
+  #28 = Fieldref           #8.#29         // main/sourcecode/mytest/inner/HeadNonInner.hair:Z
+  #29 = NameAndType        #30:#31        // hair:Z
+  #30 = Utf8               hair
+  #31 = Utf8               Z
+  #32 = Utf8               Code
+  #33 = Utf8               LineNumberTable
+  #34 = Utf8               <clinit>
+  #35 = Utf8               SourceFile
+  #36 = Utf8               HeadNonInner.java
+{
+  public int amount;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public int weight;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public int size;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public static boolean hair;
+    descriptor: Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public main.sourcecode.mytest.inner.HairStateNonInner hairState;
+    descriptor: Lmain/sourcecode/mytest/inner/HairStateNonInner;
+    flags: (0x0001) ACC_PUBLIC
+
+  public main.sourcecode.mytest.inner.HeadNonInner();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=4, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_1
+         6: putfield      #7                  // Field amount:I
+         9: aload_0
+        10: bipush        20
+        12: putfield      #13                 // Field weight:I
+        15: aload_0
+        16: bipush        30
+        18: putfield      #16                 // Field size:I
+        21: aload_0
+        22: new           #19                 // class main/sourcecode/mytest/inner/HairStateNonInner
+        25: dup
+        26: aload_0
+        27: invokespecial #21                 // Method main/sourcecode/mytest/inner/HairStateNonInner."<init>":(Lmain/sourcecode/mytest/inner/HeadNonInner;)V
+        30: putfield      #24                 // Field hairState:Lmain/sourcecode/mytest/inner/HairStateNonInner;
+        33: return
+      LineNumberTable:
+        line 3: 0
+        line 4: 4
+        line 5: 9
+        line 6: 15
+        line 8: 21
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_1
+         1: putstatic     #28                 // Field hair:Z
+         4: return
+      LineNumberTable:
+        line 7: 0
+}
+SourceFile: "HeadNonInner.java"
