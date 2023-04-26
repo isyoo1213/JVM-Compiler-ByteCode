@@ -1,0 +1,127 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner.class
+  Last modified 2023. 4. 26.; size 784 bytes
+  SHA-256 checksum d215ef4076f61d4dad03dbdae77ae71f079fafc1ca80219c202eb869098ff439
+  Compiled from "HeadWithStaticInner.java"
+public class main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 6, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner.amount:I
+   #8 = Class              #10            // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner
+   #9 = NameAndType        #11:#12        // amount:I
+  #10 = Utf8               main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner
+  #11 = Utf8               amount
+  #12 = Utf8               I
+  #13 = Fieldref           #8.#14         // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner.weight:I
+  #14 = NameAndType        #15:#12        // weight:I
+  #15 = Utf8               weight
+  #16 = Fieldref           #8.#17         // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner.size:I
+  #17 = NameAndType        #18:#12        // size:I
+  #18 = Utf8               size
+  #19 = Class              #20            // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState
+  #20 = Utf8               main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState
+  #21 = Methodref          #19.#3         // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState."<init>":()V
+  #22 = Fieldref           #8.#23         // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner.Hairstate:Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+  #23 = NameAndType        #24:#25        // Hairstate:Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+  #24 = Utf8               Hairstate
+  #25 = Utf8               Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+  #26 = Fieldref           #8.#27         // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner.hair:Z
+  #27 = NameAndType        #28:#29        // hair:Z
+  #28 = Utf8               hair
+  #29 = Utf8               Z
+  #30 = Fieldref           #8.#31         // main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner.staticHairState:Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+  #31 = NameAndType        #32:#25        // staticHairState:Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+  #32 = Utf8               staticHairState
+  #33 = Utf8               Code
+  #34 = Utf8               LineNumberTable
+  #35 = Utf8               <clinit>
+  #36 = Utf8               SourceFile
+  #37 = Utf8               HeadWithStaticInner.java
+  #38 = Utf8               NestMembers
+  #39 = Utf8               InnerClasses
+  #40 = Utf8               StaticHairState
+{
+  public int amount;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public int weight;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public int size;
+    descriptor: I
+    flags: (0x0001) ACC_PUBLIC
+
+  public static boolean hair;
+    descriptor: Z
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner$StaticHairState Hairstate;
+    descriptor: Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+    flags: (0x0001) ACC_PUBLIC
+
+  public static main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner$StaticHairState staticHairState;
+    descriptor: Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+
+  public main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: iconst_1
+         6: putfield      #7                  // Field amount:I
+         9: aload_0
+        10: bipush        20
+        12: putfield      #13                 // Field weight:I
+        15: aload_0
+        16: bipush        30
+        18: putfield      #16                 // Field size:I
+        21: aload_0
+        22: new           #19                 // class main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState
+        25: dup
+        26: invokespecial #21                 // Method main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState."<init>":()V
+        29: putfield      #22                 // Field Hairstate:Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+        32: return
+      LineNumberTable:
+        line 3: 0
+        line 5: 4
+        line 6: 9
+        line 7: 15
+        line 9: 21
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=2, locals=0, args_size=0
+         0: iconst_1
+         1: putstatic     #26                 // Field hair:Z
+         4: new           #19                 // class main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState
+         7: dup
+         8: invokespecial #21                 // Method main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState."<init>":()V
+        11: putstatic     #30                 // Field staticHairState:Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
+        14: return
+      LineNumberTable:
+        line 8: 0
+        line 10: 4
+}
+SourceFile: "HeadWithStaticInner.java"
+NestMembers:
+  main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState
+InnerClasses:
+  public static #40= #19 of #8;           // StaticHairState=class main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState of class main/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner
