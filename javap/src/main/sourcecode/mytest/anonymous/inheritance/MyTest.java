@@ -8,9 +8,9 @@ public class MyTest {
 
         Hive hive = new Hive();
         hive.spider1.attack();
-        //hive.spider1.numberOfSpider
-//        hive.spider1.cobWeb();
-
+        hive.spider2.attack();
+        hive.method1();
+        hive.method2();
 
     }
 }
