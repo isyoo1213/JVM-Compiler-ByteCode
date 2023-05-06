@@ -135,4 +135,8 @@ public class Hive {
         spider4.attack();
     }
 
+    public void method3(Insect spider) {
+        spider.attack();
+    }
+
 }
