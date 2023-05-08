@@ -1,0 +1,148 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/enumclass/EnumClass.class
+  Last modified 2023. 5. 7.; size 1100 bytes
+  SHA-256 checksum d0c42db5b9971df6e3d7d93c5c960e57e8e785ac898ce04674e4bb02ef2685f2
+  Compiled from "EnumClass.java"
+public final class main.sourcecode.enumclass.EnumClass extends java.lang.Enum<main.sourcecode.enumclass.EnumClass>
+  minor version: 0
+  major version: 61
+  flags: (0x4031) ACC_PUBLIC, ACC_FINAL, ACC_SUPER, ACC_ENUM
+  this_class: #1                          // main/sourcecode/enumclass/EnumClass
+  super_class: #26                        // java/lang/Enum
+  interfaces: 0, fields: 5, methods: 5, attributes: 2
+Constant pool:
+   #1 = Class              #2             // main/sourcecode/enumclass/EnumClass
+   #2 = Utf8               main/sourcecode/enumclass/EnumClass
+   #3 = Fieldref           #1.#4          // main/sourcecode/enumclass/EnumClass.READY:Lmain/sourcecode/enumclass/EnumClass;
+   #4 = NameAndType        #5:#6          // READY:Lmain/sourcecode/enumclass/EnumClass;
+   #5 = Utf8               READY
+   #6 = Utf8               Lmain/sourcecode/enumclass/EnumClass;
+   #7 = Fieldref           #1.#8          // main/sourcecode/enumclass/EnumClass.SEND:Lmain/sourcecode/enumclass/EnumClass;
+   #8 = NameAndType        #9:#6          // SEND:Lmain/sourcecode/enumclass/EnumClass;
+   #9 = Utf8               SEND
+  #10 = Fieldref           #1.#11         // main/sourcecode/enumclass/EnumClass.COMPLETE:Lmain/sourcecode/enumclass/EnumClass;
+  #11 = NameAndType        #12:#6         // COMPLETE:Lmain/sourcecode/enumclass/EnumClass;
+  #12 = Utf8               COMPLETE
+  #13 = Fieldref           #1.#14         // main/sourcecode/enumclass/EnumClass.CLOSE:Lmain/sourcecode/enumclass/EnumClass;
+  #14 = NameAndType        #15:#6         // CLOSE:Lmain/sourcecode/enumclass/EnumClass;
+  #15 = Utf8               CLOSE
+  #16 = Fieldref           #1.#17         // main/sourcecode/enumclass/EnumClass.$VALUES:[Lmain/sourcecode/enumclass/EnumClass;
+  #17 = NameAndType        #18:#19        // $VALUES:[Lmain/sourcecode/enumclass/EnumClass;
+  #18 = Utf8               $VALUES
+  #19 = Utf8               [Lmain/sourcecode/enumclass/EnumClass;
+  #20 = Methodref          #21.#22        // "[Lmain/sourcecode/enumclass/EnumClass;".clone:()Ljava/lang/Object;
+  #21 = Class              #19            // "[Lmain/sourcecode/enumclass/EnumClass;"
+  #22 = NameAndType        #23:#24        // clone:()Ljava/lang/Object;
+  #23 = Utf8               clone
+  #24 = Utf8               ()Ljava/lang/Object;
+  #25 = Methodref          #26.#27        // java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #26 = Class              #28            // java/lang/Enum
+  #27 = NameAndType        #29:#30        // valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #28 = Utf8               java/lang/Enum
+  #29 = Utf8               valueOf
+  #30 = Utf8               (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  #31 = Methodref          #26.#32        // java/lang/Enum."<init>":(Ljava/lang/String;I)V
+  #32 = NameAndType        #33:#34        // "<init>":(Ljava/lang/String;I)V
+  #33 = Utf8               <init>
+  #34 = Utf8               (Ljava/lang/String;I)V
+  #35 = String             #5             // READY
+  #36 = Methodref          #1.#32         // main/sourcecode/enumclass/EnumClass."<init>":(Ljava/lang/String;I)V
+  #37 = String             #9             // SEND
+  #38 = String             #12            // COMPLETE
+  #39 = String             #15            // CLOSE
+  #40 = Methodref          #1.#41         // main/sourcecode/enumclass/EnumClass.$values:()[Lmain/sourcecode/enumclass/EnumClass;
+  #41 = NameAndType        #42:#43        // $values:()[Lmain/sourcecode/enumclass/EnumClass;
+  #42 = Utf8               $values
+  #43 = Utf8               ()[Lmain/sourcecode/enumclass/EnumClass;
+  #44 = Utf8               values
+  #45 = Utf8               Code
+  #46 = Utf8               LineNumberTable
+  #47 = Utf8               (Ljava/lang/String;)Lmain/sourcecode/enumclass/EnumClass;
+  #48 = Utf8               Signature
+  #49 = Utf8               ()V
+  #50 = Utf8               <clinit>
+  #51 = Utf8               Ljava/lang/Enum<Lmain/sourcecode/enumclass/EnumClass;>;
+  #52 = Utf8               SourceFile
+  #53 = Utf8               EnumClass.java
+{
+  public static final main.sourcecode.enumclass.EnumClass READY;
+    descriptor: Lmain/sourcecode/enumclass/EnumClass;
+    flags: (0x4019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final main.sourcecode.enumclass.EnumClass SEND;
+    descriptor: Lmain/sourcecode/enumclass/EnumClass;
+    flags: (0x4019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final main.sourcecode.enumclass.EnumClass COMPLETE;
+    descriptor: Lmain/sourcecode/enumclass/EnumClass;
+    flags: (0x4019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static final main.sourcecode.enumclass.EnumClass CLOSE;
+    descriptor: Lmain/sourcecode/enumclass/EnumClass;
+    flags: (0x4019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL, ACC_ENUM
+
+  public static main.sourcecode.enumclass.EnumClass[] values();
+    descriptor: ()[Lmain/sourcecode/enumclass/EnumClass;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: getstatic     #16                 // Field $VALUES:[Lmain/sourcecode/enumclass/EnumClass;
+         3: invokevirtual #20                 // Method "[Lmain/sourcecode/enumclass/EnumClass;".clone:()Ljava/lang/Object;
+         6: checkcast     #21                 // class "[Lmain/sourcecode/enumclass/EnumClass;"
+         9: areturn
+      LineNumberTable:
+        line 3: 0
+
+  public static main.sourcecode.enumclass.EnumClass valueOf(java.lang.String);
+    descriptor: (Ljava/lang/String;)Lmain/sourcecode/enumclass/EnumClass;
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: ldc           #1                  // class main/sourcecode/enumclass/EnumClass
+         2: aload_0
+         3: invokestatic  #25                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+         6: checkcast     #1                  // class main/sourcecode/enumclass/EnumClass
+         9: areturn
+      LineNumberTable:
+        line 3: 0
+
+  static {};
+    descriptor: ()V
+    flags: (0x0008) ACC_STATIC
+    Code:
+      stack=4, locals=0, args_size=0
+         0: new           #1                  // class main/sourcecode/enumclass/EnumClass
+         3: dup
+         4: ldc           #35                 // String READY
+         6: iconst_0
+         7: invokespecial #36                 // Method "<init>":(Ljava/lang/String;I)V
+        10: putstatic     #3                  // Field READY:Lmain/sourcecode/enumclass/EnumClass;
+        13: new           #1                  // class main/sourcecode/enumclass/EnumClass
+        16: dup
+        17: ldc           #37                 // String SEND
+        19: iconst_1
+        20: invokespecial #36                 // Method "<init>":(Ljava/lang/String;I)V
+        23: putstatic     #7                  // Field SEND:Lmain/sourcecode/enumclass/EnumClass;
+        26: new           #1                  // class main/sourcecode/enumclass/EnumClass
+        29: dup
+        30: ldc           #38                 // String COMPLETE
+        32: iconst_2
+        33: invokespecial #36                 // Method "<init>":(Ljava/lang/String;I)V
+        36: putstatic     #10                 // Field COMPLETE:Lmain/sourcecode/enumclass/EnumClass;
+        39: new           #1                  // class main/sourcecode/enumclass/EnumClass
+        42: dup
+        43: ldc           #39                 // String CLOSE
+        45: iconst_3
+        46: invokespecial #36                 // Method "<init>":(Ljava/lang/String;I)V
+        49: putstatic     #13                 // Field CLOSE:Lmain/sourcecode/enumclass/EnumClass;
+        52: invokestatic  #40                 // Method $values:()[Lmain/sourcecode/enumclass/EnumClass;
+        55: putstatic     #16                 // Field $VALUES:[Lmain/sourcecode/enumclass/EnumClass;
+        58: return
+      LineNumberTable:
+        line 4: 0
+        line 5: 13
+        line 6: 26
+        line 7: 39
+        line 3: 52
+}
+Signature: #51                          // Ljava/lang/Enum<Lmain/sourcecode/enumclass/EnumClass;>;
+SourceFile: "EnumClass.java"
