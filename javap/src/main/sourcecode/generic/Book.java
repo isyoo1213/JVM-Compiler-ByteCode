@@ -1,4 +1,4 @@
 package main.sourcecode.generic;
 
-public class Book {
+public class Book extends Solid{
 }
