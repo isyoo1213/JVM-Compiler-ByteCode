@@ -1,6 +1,6 @@
 Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/enumclass/Color.class
-  Last modified 2023. 5. 9.; size 414 bytes
-  SHA-256 checksum 843d4e8be9a1bb78fe9719b9f8d894180d86ab7d2dd1708b9574147dfe5d8def
+  Last modified 2023. 5. 9.; size 561 bytes
+  SHA-256 checksum c29d430c951bd970cf46863c2146c112f94fd63218d5bbcb581a7c4b40f8e2a0
   Compiled from "Color.java"
 public class main.sourcecode.enumclass.Color
   minor version: 0
@@ -8,7 +8,7 @@ public class main.sourcecode.enumclass.Color
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
   this_class: #7                          // main/sourcecode/enumclass/Color
   super_class: #2                         // java/lang/Object
-  interfaces: 0, fields: 3, methods: 2, attributes: 1
+  interfaces: 0, fields: 6, methods: 2, attributes: 1
 Constant pool:
    #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
    #2 = Class              #4             // java/lang/Object
@@ -19,44 +19,83 @@ Constant pool:
    #7 = Class              #8             // main/sourcecode/enumclass/Color
    #8 = Utf8               main/sourcecode/enumclass/Color
    #9 = Methodref          #7.#3          // main/sourcecode/enumclass/Color."<init>":()V
-  #10 = Fieldref           #7.#11         // main/sourcecode/enumclass/Color.RED:Lmain/sourcecode/enumclass/Color;
-  #11 = NameAndType        #12:#13        // RED:Lmain/sourcecode/enumclass/Color;
-  #12 = Utf8               RED
+  #10 = Fieldref           #7.#11         // main/sourcecode/enumclass/Color.nonStaticRED:Lmain/sourcecode/enumclass/Color;
+  #11 = NameAndType        #12:#13        // nonStaticRED:Lmain/sourcecode/enumclass/Color;
+  #12 = Utf8               nonStaticRED
   #13 = Utf8               Lmain/sourcecode/enumclass/Color;
-  #14 = Fieldref           #7.#15         // main/sourcecode/enumclass/Color.BLUE:Lmain/sourcecode/enumclass/Color;
-  #15 = NameAndType        #16:#13        // BLUE:Lmain/sourcecode/enumclass/Color;
-  #16 = Utf8               BLUE
-  #17 = Fieldref           #7.#18         // main/sourcecode/enumclass/Color.GREEN:Lmain/sourcecode/enumclass/Color;
-  #18 = NameAndType        #19:#13        // GREEN:Lmain/sourcecode/enumclass/Color;
-  #19 = Utf8               GREEN
-  #20 = Utf8               Code
-  #21 = Utf8               LineNumberTable
-  #22 = Utf8               <clinit>
-  #23 = Utf8               SourceFile
-  #24 = Utf8               Color.java
+  #14 = Fieldref           #7.#15         // main/sourcecode/enumclass/Color.nonStaticBLUE:Lmain/sourcecode/enumclass/Color;
+  #15 = NameAndType        #16:#13        // nonStaticBLUE:Lmain/sourcecode/enumclass/Color;
+  #16 = Utf8               nonStaticBLUE
+  #17 = Fieldref           #7.#18         // main/sourcecode/enumclass/Color.nonStaticGREEN:Lmain/sourcecode/enumclass/Color;
+  #18 = NameAndType        #19:#13        // nonStaticGREEN:Lmain/sourcecode/enumclass/Color;
+  #19 = Utf8               nonStaticGREEN
+  #20 = Fieldref           #7.#21         // main/sourcecode/enumclass/Color.RED:Lmain/sourcecode/enumclass/Color;
+  #21 = NameAndType        #22:#13        // RED:Lmain/sourcecode/enumclass/Color;
+  #22 = Utf8               RED
+  #23 = Fieldref           #7.#24         // main/sourcecode/enumclass/Color.BLUE:Lmain/sourcecode/enumclass/Color;
+  #24 = NameAndType        #25:#13        // BLUE:Lmain/sourcecode/enumclass/Color;
+  #25 = Utf8               BLUE
+  #26 = Fieldref           #7.#27         // main/sourcecode/enumclass/Color.GREEN:Lmain/sourcecode/enumclass/Color;
+  #27 = NameAndType        #28:#13        // GREEN:Lmain/sourcecode/enumclass/Color;
+  #28 = Utf8               GREEN
+  #29 = Utf8               Code
+  #30 = Utf8               LineNumberTable
+  #31 = Utf8               <clinit>
+  #32 = Utf8               SourceFile
+  #33 = Utf8               Color.java
 {
   public static final main.sourcecode.enumclass.Color RED;
     descriptor: Lmain/sourcecode/enumclass/Color;
     flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
 
+  public main.sourcecode.enumclass.Color nonStaticRED;
+    descriptor: Lmain/sourcecode/enumclass/Color;
+    flags: (0x0001) ACC_PUBLIC
+
   public static final main.sourcecode.enumclass.Color BLUE;
     descriptor: Lmain/sourcecode/enumclass/Color;
     flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+
+  public main.sourcecode.enumclass.Color nonStaticBLUE;
+    descriptor: Lmain/sourcecode/enumclass/Color;
+    flags: (0x0001) ACC_PUBLIC
 
   public static final main.sourcecode.enumclass.Color GREEN;
     descriptor: Lmain/sourcecode/enumclass/Color;
     flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
 
+  public main.sourcecode.enumclass.Color nonStaticGREEN;
+    descriptor: Lmain/sourcecode/enumclass/Color;
+    flags: (0x0001) ACC_PUBLIC
+
   public main.sourcecode.enumclass.Color();
     descriptor: ()V
     flags: (0x0001) ACC_PUBLIC
     Code:
-      stack=1, locals=1, args_size=1
+      stack=3, locals=1, args_size=1
          0: aload_0
          1: invokespecial #1                  // Method java/lang/Object."<init>":()V
-         4: return
+         4: aload_0
+         5: new           #7                  // class main/sourcecode/enumclass/Color
+         8: dup
+         9: invokespecial #9                  // Method "<init>":()V
+        12: putfield      #10                 // Field nonStaticRED:Lmain/sourcecode/enumclass/Color;
+        15: aload_0
+        16: new           #7                  // class main/sourcecode/enumclass/Color
+        19: dup
+        20: invokespecial #9                  // Method "<init>":()V
+        23: putfield      #14                 // Field nonStaticBLUE:Lmain/sourcecode/enumclass/Color;
+        26: aload_0
+        27: new           #7                  // class main/sourcecode/enumclass/Color
+        30: dup
+        31: invokespecial #9                  // Method "<init>":()V
+        34: putfield      #17                 // Field nonStaticGREEN:Lmain/sourcecode/enumclass/Color;
+        37: return
       LineNumberTable:
         line 3: 0
+        line 5: 4
+        line 7: 15
+        line 9: 26
 
   static {};
     descriptor: ()V
@@ -66,19 +105,19 @@ Constant pool:
          0: new           #7                  // class main/sourcecode/enumclass/Color
          3: dup
          4: invokespecial #9                  // Method "<init>":()V
-         7: putstatic     #10                 // Field RED:Lmain/sourcecode/enumclass/Color;
+         7: putstatic     #20                 // Field RED:Lmain/sourcecode/enumclass/Color;
         10: new           #7                  // class main/sourcecode/enumclass/Color
         13: dup
         14: invokespecial #9                  // Method "<init>":()V
-        17: putstatic     #14                 // Field BLUE:Lmain/sourcecode/enumclass/Color;
+        17: putstatic     #23                 // Field BLUE:Lmain/sourcecode/enumclass/Color;
         20: new           #7                  // class main/sourcecode/enumclass/Color
         23: dup
         24: invokespecial #9                  // Method "<init>":()V
-        27: putstatic     #17                 // Field GREEN:Lmain/sourcecode/enumclass/Color;
+        27: putstatic     #26                 // Field GREEN:Lmain/sourcecode/enumclass/Color;
         30: return
       LineNumberTable:
         line 4: 0
-        line 5: 10
-        line 6: 20
+        line 6: 10
+        line 8: 20
 }
 SourceFile: "Color.java"
