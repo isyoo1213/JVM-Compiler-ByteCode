@@ -46,5 +46,16 @@ public class MyCountingSort {
             System.out.println(result[i] + "\t");
         }
         System.out.println();
+
+        //간략버전
+        int[] arr = new int[101];
+        for (int i = 0; i < 50; i++) {
+            arr[(int) (Math.random() * 100)]++;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            while (arr[i]-- > 0) {
+                System.out.println(i + "");
+            }
+        }
     }
 }
