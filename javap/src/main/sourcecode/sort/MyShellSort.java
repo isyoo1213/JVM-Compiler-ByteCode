@@ -41,4 +41,24 @@ public class MyShellSort {
             a[j + gap] = target;
         }
     }
+
+    private static void shortShellSort(int[] a, int size) {
+        int gapIndex = getGap(size);
+        while (gapIndex >= 0) {
+            int step = gap[gapIndex];
+            for (int i = step; i < size; i++) {
+                for (int j = i; j - step >= 0; j = j - step) { //a[j-step]이 음수가 되는 경우인 오류상황을 포함하므로, && 앞의 조건에서 걸러져 오류가 안생기는지 확인해야함
+                    if (a[j] < a[j - step]) {
+                        swap(a, j, j - step);
+                    }
+                }
+            }
+        }
+    }
+
+    private static void swap(int[] a, int i, int j) {
+        int swap = a[i];
+        a[i] = a[j];
+        a[j] = swap;
+    }
 }
