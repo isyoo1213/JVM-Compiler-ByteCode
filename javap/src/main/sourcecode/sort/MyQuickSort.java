@@ -60,6 +60,43 @@ public class MyQuickSort {
         return high;
     }
 
+    private static void middlePivotSort(int[] a, int low, int high) {
+
+        if(low >= high) {
+            return;
+        }
+
+        int pivot = middlePivotPartition(a, low, high);
+
+        middlePivotSort(a, low, pivot);
+        middlePivotSort(a, pivot + 1, high);
+    }
+
+    private static int middlePivotPartition(int[] a, int left, int right) {
+
+        int low = left - 1;
+        int high = right + 1;
+        int pivot = a[(left + right) / 2];		// 부분리스트의 중간 요소를 피벗으로 설정
+
+
+        while(true) {
+            do {
+                low++;
+            } while(a[low] < pivot);
+
+            do {
+                high--;
+            } while(a[high] > pivot && low <= high);
+
+            if(low >= high) {
+                return high;
+            }
+
+            swap(a, low, high);
+        }
+
+    }
+
     private static void swap(int[] a, int i, int j) {
         int temp = a[i];
         a[i] = a[j];
