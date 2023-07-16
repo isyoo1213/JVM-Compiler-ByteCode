@@ -33,4 +33,37 @@ public class MyBinaryInsertionSort {
         return high;
     }
 
+    int getAscending(int[] a, int low, int high) {
+
+        int limit = low + 1;
+        if(limit == high) {
+            return 1;
+        }
+
+        if(a[low] <= a[limit]) {
+            while(limit < high && a[limit - 1] <= a[limit]) {
+                limit++;
+            }
+        }
+        else {
+            while(limit < high && a[limit - 1] > a[limit]) {
+                limit++;
+            }
+            reversing(a, low, limit);
+        }
+
+        return limit - low;
+    }
+
+    void reversing(int[] a, int low, int high) {
+        high--;
+        while (low < high) {
+            int temp = a[low];
+            a[low] = a[high];
+            a[high] = temp;
+            low++;
+            high--;
+        }
+    }
+
 }
