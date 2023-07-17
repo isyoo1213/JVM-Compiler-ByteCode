@@ -33,7 +33,48 @@ public class MyBinaryInsertionSort {
         return high;
     }
 
-    int getAscending(int[] a, int low, int high) {
+    public static void advancedBinaryInsertionSort(int[] a) {
+        if(a.length < 2) {
+            return;
+        }
+        int incLength = getAscending(a, 0, a.length);
+        advancedBinaryInsertionSort(a, 0, a.length, incLength);
+    }
+
+    private static void advancedBinaryInsertionSort(int[] a, int low, int high ,int start) {
+        if(low == start) {
+            start++;
+        }
+
+        for (; start < high; start++) {
+            int target = a[start];
+            int loc = advancedBinarySearch(a, target, low, start);
+            int j = start - 1;
+
+            while (j >= loc) {
+                a[j + 1] = a[j];
+                j--;
+            }
+            a[loc] = target;
+        }
+    }
+
+    private static int advancedBinarySearch(int[] a, int key, int low, int high) {
+
+        int mid;
+        while (low < high) {
+            mid = low + ((high - low) / 2);
+            if (key < a[mid]) {
+                high = mid;
+            }
+            else {
+                low = mid + 1;
+            }
+        }
+        return low;
+    }
+
+    private static int getAscending(int[] a, int low, int high) {
 
         int limit = low + 1;
         if(limit == high) {
@@ -55,7 +96,7 @@ public class MyBinaryInsertionSort {
         return limit - low;
     }
 
-    void reversing(int[] a, int low, int high) {
+    private static void reversing(int[] a, int low, int high) {
         high--;
         while (low < high) {
             int temp = a[low];
