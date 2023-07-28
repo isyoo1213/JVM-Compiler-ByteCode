@@ -1,6 +1,6 @@
 package main.sourcecode.basicPS.primeNumbers;
 
-public class isPrimeNumbers {
+public class IsPrimeNumbers {
 
     public static boolean isPrimeV1(int num) {
         for (int i = 2; i < num; i++) {

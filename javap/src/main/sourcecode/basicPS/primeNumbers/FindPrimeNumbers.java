@@ -10,7 +10,7 @@ public class FindPrimeNumbers {
         sieveOfEratosthenes[1] = true;
 
         ArrayList<Integer> result = new ArrayList<Integer>();
-        for (int i = 2; (i - 1) * (i - 1) < num; i++) {
+        for (int i = 2; (i - 1) * (i - 1) <= num; i++) {
             if (sieveOfEratosthenes[i] == false) {
                 for (int p = 2; p * i <= num; p++) {
                     sieveOfEratosthenes[p * i] = true;
