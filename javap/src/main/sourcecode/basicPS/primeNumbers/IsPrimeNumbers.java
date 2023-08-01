@@ -21,7 +21,7 @@ public class IsPrimeNumbers {
     }
 
     public static boolean isPrimeV3(int num) {
-        for (int i = 2; i * i < num; i++) {
+        for (int i = 2; i * i <= num; i++) {
             if (num % i == 0) {
                 return false;
             }
@@ -33,5 +33,6 @@ public class IsPrimeNumbers {
         System.out.println(isPrimeV1(43));
         System.out.println(isPrimeV2(43));
         System.out.println(isPrimeV3(43));
+        System.out.println(isPrimeV3(4));
     }
 }
