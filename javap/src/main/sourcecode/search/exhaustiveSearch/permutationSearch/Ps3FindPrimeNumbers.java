@@ -29,7 +29,7 @@ import java.util.Scanner;
 
 public class Ps3FindPrimeNumbers {
 
-    static String numbers = "0123";
+    static String numbers = "123";
 
     public static int solution(String numbers) {
         int answer = 0; //문제에 주어진 변수 + return에 사용해야함
@@ -90,12 +90,30 @@ public class Ps3FindPrimeNumbers {
 
     public static void permutation(String prefix, String str, HashSet<Integer> set) {
         int n = str.length();
+        System.out.println("n = " + n);
+        System.out.println("prefix = " + prefix);
         if (!prefix.equals("") ) {
-            System.out.println("prefix = " + prefix);
             set.add(Integer.valueOf(prefix));
         }
         for (int i = 0; i < n; i++) {
+            System.out.println("prefix = " + prefix + " / i = " + i + " / n = " + n);
+            System.out.println("str = " + str);
+            System.out.println("str.substring(0, " + i + ") = " + str.substring(0, i));
+            System.out.println("str.substring(" + (i + 1) + ", " + n + ") = " + str.substring(i+1, n));
+            System.out.println("prefix + str.charAt(i) = " + prefix + str.charAt(i));
             permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, n), set);
+            //str.substring()의 반복
+            // - 각각 i, n까지 이므로, permutation에 진입할 때마다
+            //1. substring(0, 0)은 남아있는 배열의 첫 번째 수를 버리고
+            //2. substring(i + 1, n)은 위에서 버리고 남아있는 배열의 숫자를 가지고 있게 된다
+            //3. n이 0이 되는 경우, 즉 for문을 배열에 있는 숫자의 수만큼 진입하게 되면 n = 0이므로 더 이상 재귀를 반복하지 않게 된다
+            // - 즉, 재귀를 들어갈 수록, 전달되는 str의 배열의 숫자가 하나씩 줄어드는 것을 가정
+            // ex) 배열의 size가 3일 경우
+            // i = 0 -> 배열의 1, 2 인덱스에 해당하는 숫자만 남음
+            // i = 1 -> 배열의 0, 2 인덱스에 해당하는 숫자만 남음
+            // i = 2 -> 배열의 0, 1 인덱스에 해당하는 숫자만 남음
+            // - 즉, 포인트는 str.substring을 통해 재귀를 탈 때 i에 해당하는 인덱스가 제외되며 배열의 사이즈가 하나씩 줄어들고,
+            // - 줄어드는 인덱스가 각각의 모든 인덱스에 해당하는 경우를 모두 구현하도록 가정한다는 것이 포인트
         }
     }
 
