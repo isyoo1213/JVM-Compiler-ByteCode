@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 2, 2, 3, 5
  */
 
-public class Factorization {
+public class FactorizationSP {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
