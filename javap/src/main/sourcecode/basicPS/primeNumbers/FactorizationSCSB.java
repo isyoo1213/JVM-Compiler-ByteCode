@@ -2,7 +2,7 @@ package main.sourcecode.basicPS.primeNumbers;
 
 import java.util.Scanner;
 
-public class FactorizationSB {
+public class FactorizationSCSB {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
