@@ -11,7 +11,7 @@ public class Ps1TimesTableSCFor {
 
         long start = System.currentTimeMillis();
 
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < 5000; i++) {
             System.out.println(a + " * " + i + " = " + (a*i));
         }
 
