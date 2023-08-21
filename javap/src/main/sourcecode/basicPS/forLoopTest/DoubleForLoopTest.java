@@ -1,6 +1,6 @@
 package main.sourcecode.basicPS.forLoopTest;
 
-public class MultiForLoopTest {
+public class DoubleForLoopTest {
 
     public static long run1() {
         final long start = System.nanoTime();
