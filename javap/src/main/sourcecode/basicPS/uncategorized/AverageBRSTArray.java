@@ -1,7 +1,10 @@
 package main.sourcecode.basicPS.uncategorized;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 /**
  * 문제
@@ -21,25 +24,25 @@ import java.util.Scanner;
  * 75.0
  */
 
-public class AverageSCArray {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+public class AverageBRSTArray {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        double[] a = new double[sc.nextInt()];
+        double[] a = new double[Integer.parseInt(br.readLine())];
+
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
         for (int i = 0; i < a.length; i++) {
-            a[i] = sc.nextDouble();
+            a[i] = Double.parseDouble(st.nextToken());
         }
 
-        sc.close();
-
-        double total = 0;
+        double sum = 0;
         Arrays.sort(a);
 
         for (int i = 0; i < a.length; i++) {
-            total = total + ((a[i] / a[a.length - 1]) * 100);
+            sum = sum + ((a[i] / a[a.length - 1]) * 100);
         }
 
-        System.out.println(total / a.length);
+        System.out.println(sum / a.length);
     }
 }
