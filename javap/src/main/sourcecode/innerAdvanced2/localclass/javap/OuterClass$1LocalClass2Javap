@@ -1,0 +1,70 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/mytest/inner/localclass/OuterClass$1LocalClass2.class
+  Last modified 2023. 5. 2.; size 509 bytes
+  SHA-256 checksum 410a96e40c379964972cfa8c4abce0aba83b3949dad285450107c8e15fd372ed
+  Compiled from "OuterClass.java"
+class main.sourcecode.innerAdvanced2.localclass.OuterClass$1LocalClass2
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #14                         // main/sourcecode/mytest/inner/localclass/OuterClass$1LocalClass2
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 2, methods: 1, attributes: 4
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // main/sourcecode/mytest/inner/localclass/OuterClass.staticField:Ljava/lang/String;
+   #8 = Class              #10            // main/sourcecode/mytest/inner/localclass/OuterClass
+   #9 = NameAndType        #11:#12        // staticField:Ljava/lang/String;
+  #10 = Utf8               main/sourcecode/mytest/inner/localclass/OuterClass
+  #11 = Utf8               staticField
+  #12 = Utf8               Ljava/lang/String;
+  #13 = Fieldref           #14.#15        // main/sourcecode/mytest/inner/localclass/OuterClass$1LocalClass2.h:Ljava/lang/String;
+  #14 = Class              #16            // main/sourcecode/mytest/inner/localclass/OuterClass$1LocalClass2
+  #15 = NameAndType        #17:#12        // h:Ljava/lang/String;
+  #16 = Utf8               main/sourcecode/mytest/inner/localclass/OuterClass$1LocalClass2
+  #17 = Utf8               h
+  #18 = Utf8               c
+  #19 = Utf8               I
+  #20 = Utf8               Code
+  #21 = Utf8               LineNumberTable
+  #22 = Utf8               SourceFile
+  #23 = Utf8               OuterClass.java
+  #24 = Utf8               EnclosingMethod
+  #25 = NameAndType        #26:#6         // staticMethod:()V
+  #26 = Utf8               staticMethod
+  #27 = Utf8               NestHost
+  #28 = Utf8               InnerClasses
+  #29 = Utf8               LocalClass2
+{
+  int c;
+    descriptor: I
+    flags: (0x0000)
+
+  java.lang.String h;
+    descriptor: Ljava/lang/String;
+    flags: (0x0000)
+
+  main.sourcecode.innerAdvanced2.localclass.OuterClass$1LocalClass2();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: getstatic     #7                  // Field main/sourcecode/mytest/inner/localclass/OuterClass.staticField:Ljava/lang/String;
+         8: putfield      #13                 // Field h:Ljava/lang/String;
+        11: return
+      LineNumberTable:
+        line 72: 0
+        line 78: 4
+}
+SourceFile: "OuterClass.java"
+EnclosingMethod: #8.#25                 // main.sourcecode.innerAdvanced2.localclass.OuterClass.staticMethod
+NestHost: class main/sourcecode/mytest/inner/localclass/OuterClass
+InnerClasses:
+  #29= #14;                               // LocalClass2=class main/sourcecode/mytest/inner/localclass/OuterClass$1LocalClass2

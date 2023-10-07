@@ -1,4 +1,4 @@
-package main.sourcecode.mytest.inner;
+package main.sourcecode.innerAdvanced2;
 
 public class HairStateNonInner {
 

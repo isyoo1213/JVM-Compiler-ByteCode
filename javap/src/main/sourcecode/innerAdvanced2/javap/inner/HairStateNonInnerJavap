@@ -2,7 +2,7 @@ Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/so
   Last modified 2023. 4. 25.; size 579 bytes
   SHA-256 checksum 46911b5633b7c01afe3d7e56d37e9bde97d1a1491d120ade710ceac71d56a60a
   Compiled from "HairStateNonInner.java"
-public class main.sourcecode.mytest.inner.HairStateNonInner
+public class main.sourcecode.innerAdvanced2.HairStateNonInner
   minor version: 0
   major version: 61
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
@@ -52,7 +52,7 @@ Constant pool:
     descriptor: I
     flags: (0x0001) ACC_PUBLIC
 
-  public main.sourcecode.mytest.inner.HairStateNonInner(main.sourcecode.mytest.inner.HeadNonInner);
+  public main.sourcecode.innerAdvanced2.HairStateNonInner(main.sourcecode.innerAdvanced2.HeadNonInner);
     descriptor: (Lmain/sourcecode/mytest/inner/HeadNonInner;)V
     flags: (0x0001) ACC_PUBLIC
     Code:

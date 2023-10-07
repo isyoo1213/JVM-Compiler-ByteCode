@@ -2,7 +2,7 @@ Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/so
   Last modified 2023. 4. 26.; size 784 bytes
   SHA-256 checksum d215ef4076f61d4dad03dbdae77ae71f079fafc1ca80219c202eb869098ff439
   Compiled from "HeadWithStaticInner.java"
-public class main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner
+public class main.sourcecode.innerAdvanced2.nonorstatic.HeadWithStaticInner
   minor version: 0
   major version: 61
   flags: (0x0021) ACC_PUBLIC, ACC_SUPER
@@ -67,15 +67,15 @@ Constant pool:
     descriptor: Z
     flags: (0x0009) ACC_PUBLIC, ACC_STATIC
 
-  public main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner$StaticHairState Hairstate;
+  public main.sourcecode.innerAdvanced2.nonorstatic.HeadWithStaticInner$StaticHairState Hairstate;
     descriptor: Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
     flags: (0x0001) ACC_PUBLIC
 
-  public static main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner$StaticHairState staticHairState;
+  public static main.sourcecode.innerAdvanced2.nonorstatic.HeadWithStaticInner$StaticHairState staticHairState;
     descriptor: Lmain/sourcecode/mytest/inner/nonorstatic/HeadWithStaticInner$StaticHairState;
     flags: (0x0009) ACC_PUBLIC, ACC_STATIC
 
-  public main.sourcecode.mytest.inner.nonorstatic.HeadWithStaticInner();
+  public main.sourcecode.innerAdvanced2.nonorstatic.HeadWithStaticInner();
     descriptor: ()V
     flags: (0x0001) ACC_PUBLIC
     Code:

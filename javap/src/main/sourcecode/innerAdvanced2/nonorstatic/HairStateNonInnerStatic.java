@@ -1,4 +1,4 @@
-package main.sourcecode.mytest.inner.nonorstatic;
+package main.sourcecode.innerAdvanced2.nonorstatic;
 
 public class HairStateNonInnerStatic {
 

@@ -1,4 +1,4 @@
-package main.sourcecode.mytest.inner.localclass;
+package main.sourcecode.innerAdvanced2.localclass;
 
 public class ClassNonLocalInner {
 
