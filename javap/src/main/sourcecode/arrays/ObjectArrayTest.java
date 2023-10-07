@@ -38,13 +38,30 @@ public class ObjectArrayTest {
         MyObject[] objArray3 = Arrays.copyOf(objArray, 3);
         printArray(objArray3);
 
+        MyObject[] objArray4 = new MyObject[3];
+        for (int i = 0; i < objArray4.length; i++) {
+            objArray4[i] = new MyObject(objArray[i].age, objArray[i].name);
+        }
+
+        printArray(objArray4);
+
+
         if (objArray.equals(objArray2)) {
             System.out.println("Array1 == Array2");
         }
+
+        //Arrays.copyOf() 를 사용한 경우, 참조변수는 서로 다른 hash를 가지지만, 참조변수가 가리키는 메모리 공간은 같다
         if (objArray.equals(objArray3)) {
             System.out.println("Array1 == Array3");
         } else {
             System.out.println("Array1 != Array3");
+        }
+
+        //직접 배열의 요소 객체들을 새로 생성해주면, 참조변수가 가리키는 메모리 공간도 다름을 확인
+        if (objArray.equals(objArray4)) {
+            System.out.println("Array1 == Array4");
+        } else {
+            System.out.println("Array1 != Array4");
         }
 
     }
