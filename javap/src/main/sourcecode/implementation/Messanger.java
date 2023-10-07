@@ -4,6 +4,7 @@ public interface Messanger {
 
     public static final int MIN_SIZE = 1;
     public static final int MAX_SIZE = 1000;
+    public static final String MESSANGER_NAME = "default";
 
     public abstract String getMessage();
 
