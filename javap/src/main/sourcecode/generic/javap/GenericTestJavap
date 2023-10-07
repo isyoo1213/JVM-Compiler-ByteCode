@@ -1,0 +1,72 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/generic/GenericTest.class
+  Last modified 2023. 5. 10.; size 435 bytes
+  SHA-256 checksum ff6f32a99c61d456d101e1c40a98f0d280f9f4036f4b37f9ce6de14b811cd4a2
+  Compiled from "GenericTest.java"
+public class main.sourcecode.generic.GenericTest
+  minor version: 0
+  major version: 61
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #15                         // main/sourcecode/generic/GenericTest
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // main/sourcecode/generic/Bag
+   #8 = Utf8               main/sourcecode/generic/Bag
+   #9 = Class              #10            // main/sourcecode/generic/Book
+  #10 = Utf8               main/sourcecode/generic/Book
+  #11 = Methodref          #9.#3          // main/sourcecode/generic/Book."<init>":()V
+  #12 = Methodref          #7.#13         // main/sourcecode/generic/Bag."<init>":(Ljava/lang/Object;)V
+  #13 = NameAndType        #5:#14         // "<init>":(Ljava/lang/Object;)V
+  #14 = Utf8               (Ljava/lang/Object;)V
+  #15 = Class              #16            // main/sourcecode/generic/GenericTest
+  #16 = Utf8               main/sourcecode/generic/GenericTest
+  #17 = Utf8               Code
+  #18 = Utf8               LineNumberTable
+  #19 = Utf8               main
+  #20 = Utf8               ([Ljava/lang/String;)V
+  #21 = Utf8               SourceFile
+  #22 = Utf8               GenericTest.java
+{
+  public main.sourcecode.generic.GenericTest();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=3, args_size=1
+         0: new           #7                  // class main/sourcecode/generic/Bag
+         3: dup
+         4: new           #9                  // class main/sourcecode/generic/Book
+         7: dup
+         8: invokespecial #11                 // Method main/sourcecode/generic/Book."<init>":()V
+        11: invokespecial #12                 // Method main/sourcecode/generic/Bag."<init>":(Ljava/lang/Object;)V
+        14: astore_1
+        15: new           #7                  // class main/sourcecode/generic/Bag
+        18: dup
+        19: new           #9                  // class main/sourcecode/generic/Book
+        22: dup
+        23: invokespecial #11                 // Method main/sourcecode/generic/Book."<init>":()V
+        26: invokespecial #12                 // Method main/sourcecode/generic/Bag."<init>":(Ljava/lang/Object;)V
+        29: astore_2
+        30: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 15
+        line 7: 30
+}
+SourceFile: "GenericTest.java"
