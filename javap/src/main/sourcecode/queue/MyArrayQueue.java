@@ -53,6 +53,7 @@ public class MyArrayQueue<E> implements QueueInterface<E>, Cloneable{
         front = rear = size = 0;
     }
 
+    // ** 이 resize()의 param에 대한 조건은 resize()를 호출하는 메서드에서 분기해서 들어오는 방식으로 구성할 예정
     private void resize(int newCapacity) {
         //parameter로 넘어오는 newCapacity에 대한 검증로직 필요 ex) newCapacity >= array.size + 1 처럼 기존의 array에 유요한 data보다 1 더 큰 capacity로 만들 수 있게끔 (front 포함해야하므로)
         int arrayCapacity = array.length;
@@ -187,6 +188,7 @@ public class MyArrayQueue<E> implements QueueInterface<E>, Cloneable{
         sort(null);
     }
 
+    @SuppressWarnings("unchecked")
     public void sort(Comparator<? super E> comparator) {
         //capacity와 size의 차이로 인한 null 요소를 방지하기 위해 size만큼의 사이즈 배열을 반환하는 toArray()로 배열화
         // * arrayQueue가 꽉 차있다고 하더라도, front의 존재로 최소 1개의 인덱스는 null을 가지고 있다
