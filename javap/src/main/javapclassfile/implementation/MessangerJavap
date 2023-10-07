@@ -1,6 +1,6 @@
 Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/implementation/Messanger.class
-  Last modified 2023. 4. 19.; size 881 bytes
-  SHA-256 checksum 38fcb72189867818c14eece074754730d21ad2aa53c3202bc5421629bd850555
+  Last modified 2023. 5. 5.; size 948 bytes
+  SHA-256 checksum bb61502efe02fcfe2bce86fb0bcc525961d4d55c6d4dfdff16a413d488cb45ba
   Compiled from "Messanger.java"
 public interface main.sourcecode.implementation.Messanger
   minor version: 0
@@ -8,7 +8,7 @@ public interface main.sourcecode.implementation.Messanger
   flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
   this_class: #2                          // main/sourcecode/implementation/Messanger
   super_class: #33                        // java/lang/Object
-  interfaces: 0, fields: 2, methods: 6, attributes: 1
+  interfaces: 0, fields: 3, methods: 6, attributes: 1
 Constant pool:
    #1 = InterfaceMethodref #2.#3          // main/sourcecode/implementation/Messanger.log:()V
    #2 = Class              #4             // main/sourcecode/implementation/Messanger
@@ -50,15 +50,19 @@ Constant pool:
   #38 = Integer            1
   #39 = Utf8               MAX_SIZE
   #40 = Integer            1000
-  #41 = Utf8               getMessage
-  #42 = Utf8               setMessage
-  #43 = Utf8               setLogin
-  #44 = Utf8               Code
-  #45 = Utf8               LineNumberTable
-  #46 = Utf8               StackMapTable
-  #47 = Utf8               getConnection
-  #48 = Utf8               SourceFile
-  #49 = Utf8               Messanger.java
+  #41 = Utf8               MESSANGER_NAME
+  #42 = Utf8               Ljava/lang/String;
+  #43 = String             #44            // default
+  #44 = Utf8               default
+  #45 = Utf8               getMessage
+  #46 = Utf8               setMessage
+  #47 = Utf8               setLogin
+  #48 = Utf8               Code
+  #49 = Utf8               LineNumberTable
+  #50 = Utf8               StackMapTable
+  #51 = Utf8               getConnection
+  #52 = Utf8               SourceFile
+  #53 = Utf8               Messanger.java
 {
   public static final int MIN_SIZE;
     descriptor: I
@@ -69,6 +73,11 @@ Constant pool:
     descriptor: I
     flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
     ConstantValue: int 1000
+
+  public static final java.lang.String MESSANGER_NAME;
+    descriptor: Ljava/lang/String;
+    flags: (0x0019) ACC_PUBLIC, ACC_STATIC, ACC_FINAL
+    ConstantValue: String default
 
   public abstract java.lang.String getMessage();
     descriptor: ()Ljava/lang/String;
@@ -96,11 +105,11 @@ Constant pool:
         26: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
         29: return
       LineNumberTable:
-        line 13: 0
-        line 14: 6
-        line 15: 10
-        line 17: 21
-        line 19: 29
+        line 14: 0
+        line 15: 6
+        line 16: 10
+        line 18: 21
+        line 20: 29
       StackMapTable: number_of_entries = 2
         frame_type = 21 /* same */
         frame_type = 7 /* same */
@@ -117,8 +126,8 @@ Constant pool:
         11: pop
         12: return
       LineNumberTable:
-        line 26: 0
-        line 27: 8
-        line 28: 12
+        line 27: 0
+        line 28: 8
+        line 29: 12
 }
 SourceFile: "Messanger.java"

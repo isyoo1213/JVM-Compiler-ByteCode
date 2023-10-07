@@ -1,5 +1,5 @@
 Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/implementation/GalaxyMessanger.class
-  Last modified 2023. 4. 19.; size 1480 bytes
+  Last modified 2023. 5. 5.; size 1480 bytes
   SHA-256 checksum 89a29cbc007f39e21cc56f28eaa025d1a00fe9044dc932a734d97ea83a012f1b
   Compiled from "GalaxyMessanger.java"
 public class main.sourcecode.implementation.GalaxyMessanger implements main.sourcecode.implementation.Messanger,main.sourcecode.implementation.WorkFile
