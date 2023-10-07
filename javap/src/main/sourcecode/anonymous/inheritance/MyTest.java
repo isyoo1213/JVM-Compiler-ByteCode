@@ -1,4 +1,4 @@
-package main.sourcecode.mytest.anonymous.inheritance;
+package main.sourcecode.anonymous.inheritance;
 
 public class MyTest {
     public static void main(String[] args) {

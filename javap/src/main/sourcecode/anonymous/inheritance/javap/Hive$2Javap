@@ -1,0 +1,142 @@
+Classfile /C:/Users/INSUNG/Documents/dev/JVM-Compiler-ByteCode/javap/src/main/sourcecode/mytest/anonymous/inheritance/Hive$2.class
+  Last modified 2023. 5. 3.; size 1267 bytes
+  SHA-256 checksum 577318114a988ca05ae69a8c4432d3d477cb0c053700ee2d4a95b8f8c2d2bcac
+  Compiled from "Hive.java"
+class main.sourcecode.anonymous.inheritance.Hive$2 extends main.sourcecode.anonymous.inheritance.Insect
+  minor version: 0
+  major version: 61
+  flags: (0x0020) ACC_SUPER
+  this_class: #10                         // main/sourcecode/mytest/anonymous/inheritance/Hive$2
+  super_class: #2                         // main/sourcecode/mytest/anonymous/inheritance/Insect
+  interfaces: 0, fields: 1, methods: 3, attributes: 5
+Constant pool:
+   #1 = Methodref          #2.#3          // main/sourcecode/mytest/anonymous/inheritance/Insect."<init>":()V
+   #2 = Class              #4             // main/sourcecode/mytest/anonymous/inheritance/Insect
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               main/sourcecode/mytest/anonymous/inheritance/Insect
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = String             #8             // 거미
+   #8 = Utf8               거미
+   #9 = Fieldref           #10.#11        // main/sourcecode/mytest/anonymous/inheritance/Hive$2.name:Ljava/lang/String;
+  #10 = Class              #12            // main/sourcecode/mytest/anonymous/inheritance/Hive$2
+  #11 = NameAndType        #13:#14        // name:Ljava/lang/String;
+  #12 = Utf8               main/sourcecode/mytest/anonymous/inheritance/Hive$2
+  #13 = Utf8               name
+  #14 = Utf8               Ljava/lang/String;
+  #15 = String             #16            // 무당
+  #16 = Utf8               무당
+  #17 = Fieldref           #10.#18        // main/sourcecode/mytest/anonymous/inheritance/Hive$2.spiderName:Ljava/lang/String;
+  #18 = NameAndType        #19:#14        // spiderName:Ljava/lang/String;
+  #19 = Utf8               spiderName
+  #20 = Fieldref           #21.#22        // java/lang/System.out:Ljava/io/PrintStream;
+  #21 = Class              #23            // java/lang/System
+  #22 = NameAndType        #24:#25        // out:Ljava/io/PrintStream;
+  #23 = Utf8               java/lang/System
+  #24 = Utf8               out
+  #25 = Utf8               Ljava/io/PrintStream;
+  #26 = String             #27            // 거미줄을 친다
+  #27 = Utf8               거미줄을 친다
+  #28 = Methodref          #29.#30        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #29 = Class              #31            // java/io/PrintStream
+  #30 = NameAndType        #32:#33        // println:(Ljava/lang/String;)V
+  #31 = Utf8               java/io/PrintStream
+  #32 = Utf8               println
+  #33 = Utf8               (Ljava/lang/String;)V
+  #34 = InvokeDynamic      #0:#35         // #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #35 = NameAndType        #36:#37        // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #36 = Utf8               makeConcatWithConstants
+  #37 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #38 = Utf8               Code
+  #39 = Utf8               LineNumberTable
+  #40 = Utf8               cobWeb
+  #41 = Utf8               attack
+  #42 = Utf8               SourceFile
+  #43 = Utf8               Hive.java
+  #44 = Utf8               EnclosingMethod
+  #45 = Class              #46            // main/sourcecode/mytest/anonymous/inheritance/Hive
+  #46 = Utf8               main/sourcecode/mytest/anonymous/inheritance/Hive
+  #47 = Utf8               NestHost
+  #48 = Utf8               BootstrapMethods
+  #49 = MethodHandle       6:#50          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/
+lang/Object;)Ljava/lang/invoke/CallSite;
+  #50 = Methodref          #51.#52        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljav
+a/lang/invoke/CallSite;
+  #51 = Class              #53            // java/lang/invoke/StringConcatFactory
+  #52 = NameAndType        #36:#54        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #53 = Utf8               java/lang/invoke/StringConcatFactory
+  #54 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #55 = String             #56            // \u0001-\u0001 : 독을 발사한다
+  #56 = Utf8               \u0001-\u0001 : 독을 발사한다
+  #57 = Utf8               InnerClasses
+  #58 = Class              #59            // java/lang/invoke/MethodHandles$Lookup
+  #59 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #60 = Class              #61            // java/lang/invoke/MethodHandles
+  #61 = Utf8               java/lang/invoke/MethodHandles
+  #62 = Utf8               Lookup
+{
+  java.lang.String spiderName;
+    descriptor: Ljava/lang/String;
+    flags: (0x0000)
+
+  main.sourcecode.anonymous.inheritance.Hive$2();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method main/sourcecode/mytest/anonymous/inheritance/Insect."<init>":()V
+         4: aload_0
+         5: ldc           #7                  // String 거미
+         7: putfield      #9                  // Field name:Ljava/lang/String;
+        10: aload_0
+        11: ldc           #15                 // String 무당
+        13: putfield      #17                 // Field spiderName:Ljava/lang/String;
+        16: return
+      LineNumberTable:
+        line 24: 0
+        line 27: 4
+        line 28: 10
+        line 29: 16
+
+  void cobWeb();
+    descriptor: ()V
+    flags: (0x0000)
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #20                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #26                 // String 거미줄을 친다
+         5: invokevirtual #28                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 32: 0
+        line 33: 8
+
+  public void attack();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=3, locals=1, args_size=1
+         0: getstatic     #20                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: aload_0
+         4: getfield      #17                 // Field spiderName:Ljava/lang/String;
+         7: aload_0
+         8: getfield      #9                  // Field name:Ljava/lang/String;
+        11: invokedynamic #34,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        16: invokevirtual #28                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        19: return
+      LineNumberTable:
+        line 37: 0
+        line 38: 19
+}
+SourceFile: "Hive.java"
+EnclosingMethod: #45.#0                 // main.sourcecode.anonymous.inheritance.Hive
+NestHost: class main/sourcecode/mytest/anonymous/inheritance/Hive
+BootstrapMethods:
+  0: #49 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallS
+ite;
+    Method arguments:
+      #55 \u0001-\u0001 : 독을 발사한다
+InnerClasses:
+  #10;                                    // class main/sourcecode/mytest/anonymous/inheritance/Hive$2
+  public static final #62= #58 of #60;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

@@ -33,6 +33,11 @@ public class OuterClass {
         class LocalClass {
             int d;
 
+            //inner 자체가 static 필드를 가지는 것은 전혀 문제 없다.
+            //why? inner '인스턴스 자체'가 'Outer의 필드로 활용'될 때 외부 인스턴스에 대한 독립성의 이슈는 문제가 되지만(by 생성자),
+            //inner 인스턴스 자체가 아닌 인스턴스 내부의 'static 필드'는 외부 인스턴스와는 독립적인 영역이다.
+            static String p = "non-static method 내부 inner의 static 필드";
+
             void method2() {
                 System.out.println("LocalClass Field d : " + d);
             }
@@ -46,6 +51,7 @@ public class OuterClass {
         inner1.d = 1004;
         inner1.method2();
         inner1.method3();
+        System.out.println(inner1.p);
     }
 
     // Method 또한 Outer 클래스의 필드와 유사하다고 생각하자

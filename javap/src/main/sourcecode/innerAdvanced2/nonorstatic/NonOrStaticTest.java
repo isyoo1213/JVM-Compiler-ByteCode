@@ -177,5 +177,6 @@ public class NonOrStaticTest {
         System.out.println(HeadWithStaticInner.staticHairState.hairColor);
         //여기까지 알 수 있는 것은, outer의 인스턴스에 상관 없이 static 필드에 할당된 static instance는 모두 공유됨
 
+        System.out.println(HeadWithInnerStatic.HairState.STYLE_NAME);
     }
 }

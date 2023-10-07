@@ -1,4 +1,4 @@
-package main.sourcecode.mytest.anonymous.implementation;
+package main.sourcecode.anonymous.implementation;
 
 public class ButtonHandler {
 
